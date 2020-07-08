@@ -4,6 +4,7 @@ body{
 }
 html {
     scroll-behavior: smooth;
+    font-family: "Helvetica Neue";
 }
 section {
     display: flex;
@@ -25,13 +26,12 @@ section:nth-child(2n + 1) {
     justify-content: center;
 }
 .section-heading span{
-    font-family: Verdana;
-    font-size: 40px;
+    font-size: 50px;
+    letter-spacing: 3px;
     font-weight: 400;
     color: #2857A4;
     width: 70%;
     padding-top: 10px;
-    margin-right: 0.5rem;
 }
 
 /*------------------------------------header horizontal list------------------------------------*/
@@ -45,7 +45,6 @@ section:nth-child(2n + 1) {
 .nav-list {
     list-style-type: none;
     font-size: 25px;
-    font-family: "Times New Roman";
     height: 60px;
     top: 20px;
 }
@@ -72,12 +71,12 @@ section:nth-child(2n + 1) {
     margin-top: 20vh;
 }
 #Name{
-    font-size: 7rem;
+    font-size: 8rem;
     letter-spacing: 0.1rem;
     color: white;
     margin-top: -50px;
-    font-weight: lighter;
-    font-family: Tahoma;
+    font-weight: 400;
+
 }
 #my-image{
     height: 14rem;
@@ -121,19 +120,23 @@ section:nth-child(2n + 1) {
 #edu{
     padding-bottom: 40px;
 }
+.course{
+    columns: 2;
+    -webkit-columns: 2;
+}
 /*------------------------------------SKILLS------------------------------------*/
 #skills{
     padding-bottom: 20px;
 }
 .skills-display {
-    width: 79%;
+    width: 80%;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .skill-progress {
-    width: 11rem;
+    width: 13rem;
     height: 2.2rem;
     background-color: lightgrey;
     border-radius: 1rem;
@@ -143,21 +146,20 @@ section:nth-child(2n + 1) {
 }
 .skill-filler{
     box-shadow: 5px 0 11px -2px #929292;
-    top:-13px;
     position: relative;
     height: 2.2rem;
     border-radius: 1rem;
-    background-image: linear-gradient(50deg, #b02c54 0%, #f28d6f 74%);
+    background-image: linear-gradient(50deg, #a1051d 0%, #f5515f 74%);
 }
-.skill-name h1{
-    font-family: sans-serif;
-    font-weight: lighter;
+.skill-name{
+    font-weight: normal;
+    letter-spacing: 2px;
     color: white;
-    font-size: 1rem;
-    margin-left: 6px;
-    padding-top: 9px;
+    font-size: 1.2rem;
+    margin-left: 15px;
+    padding-top: 6.5px;
 }
-.wowe{
+.subheading-container{
     width: 75%;
     /*height: 100%;*/
     display: flex;
@@ -225,17 +227,14 @@ section:nth-child(2n + 1) {
 
 .timeline-box {
     padding: 5px;
-    width: 40%;
-    min-height: 150px;
+    width: 45%;
     position: relative;
-    left: 5%;
-    /*text-align: right;*/
 }
 .timeline-box::after {
     content: '';
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     top: 25%;
     border-radius: 50%;
     z-index: 1;
@@ -251,13 +250,15 @@ section:nth-child(2n + 1) {
     left:53%;
 }
 .timeline-box:nth-child(2n+1)::after {
-    right: -11.8%;
+    right: -11.1%;
 }
 .timeline-box:nth-child(2n)::after {
-    left: -9%;
+    left: -8.1%;
 }
 .timeline-container {
     padding: 8px;
+    height: 100%;
+    /*background-color: #b02c54;*/
 }
 
 .timeline-divider {
@@ -267,7 +268,6 @@ section:nth-child(2n + 1) {
     left: 50%;
     border: 1px dashed rgba(0, 111, 255, 0.42);
     height: 96%;
-    color: #433E3F;
 }
 .timeline-divider .timeline-traveller {
     position: sticky;
@@ -285,38 +285,35 @@ section:nth-child(2n + 1) {
     font-size: 1.2rem;
 }
 .timeline-designation {
-    font-size: 27px;
-    font-family: Sans-Serif;
-    font-weight: lighter;
+    font-size: 32px;
     margin: 0px;
-    /*width: 40%;*/
+    font-weight: normal;
 }
 
 .timeline-company-name {
     margin: 2px 0 0;
     color: #ea5a20;
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 23px;
 }
 
 .timeline-duration {
-    color: #9e9b9b;
-    font-weight: 100;
+    font-weight: normal;
     color: grey;
     margin :0px;
-    font-size: 1.1rem;
+    font-size: 1.3vw;
 }
 
 .timeline-description {
     font-size: 20px;
-    font-family: Avenir;
     padding: 2px;
     color: #727272;
-    line-height: 25px;
+    line-height: 30px;
     text-align: justify;
-
 }
-
+.float-r{
+    float: right;
+}
 /*---------------------------------------Projects------------------------------------------------------*/
 #projects{
     padding-bottom: 20px;
