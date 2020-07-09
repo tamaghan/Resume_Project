@@ -31,7 +31,19 @@ section:nth-child(2n + 1) {
     background-color: white;
 }
 
+.timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 300px;
+    z-index: 2;
+}
 
+.timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+    font-size: 1.2rem;
+}
 /*------------------------------------header horizontal list------------------------------------*/
 #body-header{
     background-image:url("images/pic.jpg");
@@ -219,57 +231,12 @@ section:nth-child(2n + 1) {
     height: 100%;
     /*background-color: #b02c54;*/
 }
-
-.timeline-divider {
-    position: absolute;
-    width: 0;
-    top: 2%;
-    left: 50%;
-    border: 1px dashed rgba(0, 111, 255, 0.42);
-    height: 96%;
-}
-.timeline-divider .timeline-traveller {
-    position: sticky;
-    top: 300px;
-    z-index: 2;
-}
 .bold{
     font-weight: bold;
 }
-.timeline-divider i {
-    transform: rotate(90deg);
-    margin-top: -35px;
-    display: block;
-    color: #2857a4;
-    font-size: 1.2rem;
-}
-.timeline-designation {
-    font-size: 32px;
-    margin: 0px;
-    font-weight: normal;
-}
 
-.timeline-company-name {
-    margin: 2px 0 0;
-    color: #ea5a20;
-    font-weight: 600;
-    font-size: 23px;
-}
 
-.timeline-duration {
-    font-weight: normal;
-    color: grey;
-    margin :0px;
-    font-size: 1.3vw;
-}
 
-.timeline-description {
-    font-size: 20px;
-    padding: 2px;
-    color: #727272;
-    line-height: 30px;
-    text-align: justify;
-}
 .float-r{
     float: right;
 }
@@ -487,6 +454,41 @@ section:nth-child(2n + 1) {
     #project-container-mobile{
         display: none;
     }
+    .timeline-divider {
+        position: absolute;
+        width: 0;
+        top: 2%;
+        left: 50%;
+        border: 1px dashed rgba(0, 111, 255, 0.42);
+        height: 96%;
+    }
+    .timeline-designation {
+        font-size: 32px;
+        margin: 0;
+        font-weight: normal;
+    }
+
+    .timeline-company-name {
+        margin: 2px 0 0;
+        color: #ea5a20;
+        font-weight: 600;
+        font-size: 23px;
+    }
+
+    .timeline-duration {
+        font-weight: normal;
+        color: grey;
+        margin :0;
+        font-size: 1.3vw;
+    }
+    .timeline-description {
+        font-size: 20px;
+        padding: 2px;
+        color: #727272;
+        line-height: 30px;
+        text-align: justify;
+    }
+
 }
 /*-----------PHONE---------------*/
 @media screen and (max-width: 600px) {
@@ -514,12 +516,10 @@ section:nth-child(2n + 1) {
     #body-header-mobile{
         background-image: url("images/b2.jpg");
         background-position: center;
-        /*background-size:101%;*/
-        background-size:cover;
+        background-size:101%;
         width:100%;
         background-repeat: no-repeat;
-        /*background-attachment: scroll;*/
-        background-attachment: fixed;
+        background-attachment: scroll;
         height: 150vw;
         opacity: 0.9;
     }
@@ -567,5 +567,64 @@ section:nth-child(2n + 1) {
     }
     #project_container{
         display: none;
+    }
+    .edu-container-mobile{
+        /*position: relative;*/
+        /*width: 85%;*/
+    }
+    .timeline-divider {
+        position: absolute;
+        margin-top: 20px;
+        left: 10%;
+        width: 0;
+        border: 1px dashed rgba(0, 111, 255, 0.42);
+        height: 145%;
+    }
+    .timeline-box-mobile{
+        /*float: right;*/
+        margin-bottom: 10px;
+        left: 15%;
+        padding: 5px;
+        width: 80%;
+        position: relative;
+    }
+
+    .timeline-box-mobile::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: -9%;
+        top: 12%;
+        border-radius: 50%;
+        z-index: 1;
+        background-image: linear-gradient(50deg, #9a59c4 0%, #ee594a 74%);
+    }
+    .timeline-designation {
+        font-size: 7vw;
+        margin: 0;
+        font-weight: normal;
+    }
+
+    .timeline-company-name {
+        margin: 2px 0 0;
+        color: #ea5a20;
+        font-weight: 600;
+        font-size: 5vw;
+    }
+
+    .timeline-duration {
+        font-weight: normal;
+        color: grey;
+        margin :0;
+        font-size: 4vw;
+    }
+    .timeline-description {
+        font-size: 4vw;
+        padding: 2px;
+        color: #727272;
+        line-height: 30px;
+        text-align: left;
+        list-style-type: none;
     }
 }
