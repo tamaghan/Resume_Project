@@ -297,20 +297,18 @@ section:nth-child(2n + 1) {
 #contact h1 span {
     color: white;
 }
-#contact-container{
-    width: 100%;
-}
-#contact-box {
+
+.contact-box {
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
 }
-#contact-box h3 {
+.contact-box h3 {
     color: white;
     font-weight: bold;
     font-size: 1.3rem;
 }
-#resume {
+.resume {
     margin-bottom: 10px;
     display: flex;
     justify-content: space-evenly;
@@ -487,6 +485,12 @@ section:nth-child(2n + 1) {
         font-weight: lighter;
         text-align: justify;
     }
+    #contact-container{
+        width: 100%;
+    }
+    #contact-container-mobile{
+        display: none;
+    }
 }
 /*-----------PHONE---------------*/
 @media screen and (max-width: 600px) {
@@ -514,10 +518,11 @@ section:nth-child(2n + 1) {
     #body-header-mobile{
         background-image: url("images/b2.jpg");
         background-position: center;
-        background-size:101%;
+        background-size:150%;
+        /*background-size: 101%;*/
         width:100%;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
+        background-attachment: fixed;
+        /*background-attachment: scroll;*/
         height: 150vw;
         opacity: 0.9;
     }
@@ -632,5 +637,11 @@ section:nth-child(2n + 1) {
         margin-top: -10px;
         font-weight: lighter;
         text-align: justify;
+    }
+    #contact-container{
+       display: none;
+    }
+    #contact-container-mobile{
+        width: 100%;
     }
 }
