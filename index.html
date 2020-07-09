@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>TAMAGHAN MAURYA</title>
     <link rel="icon" href="images/wow1.png">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!--    https://github.com/michalsnik/aos-->
     <link rel="stylesheet" type="text/css" href="aos.css">
@@ -16,7 +19,7 @@
 <body>
 <header id="body-header">
     <nav>
-        <ul  class="nav-list text-center ">
+        <ul class="nav-list text-center ">
             <li>
                 <a href="#"> Home </a>
             </li>
@@ -40,28 +43,73 @@
             </li>
         </ul>
     </nav>
-
     <div id="name-container">
         <div class="text-center">
-            <h1 class="animated jello" id="Name">
+            <h1 class="animated jello Name">
                 TAMAGHAN MAURYA
             </h1>
         </div>
     </div>
-    <div data-aos-once="true" data-aos="zoom-out" id="my-image">
+    <div data-aos-once="true" data-aos="zoom-out" class="my-image">
         <img src="images/tg.JPG" alt="image" width="743" height="743">
     </div>
 </header>
+<div id="nav-mobile" class="fixed-top nav-mobile" style="width: 100%">
+    <div class="collapse" id="navbarToggleExternalContent" style="background-color:darkslategrey;width: 100%">
+        <ul class="nav justify-content-center ">
+            <li class="nav-item">
+                <a class="nav-link white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link white" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link white" href="#edu">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link white" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link white" href="#exp">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link white" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link white" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <nav class="navbar navbar-dark " >
+        <button class="navbar-toggler" style="background-color: darkslategrey"
+                type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent"
+                aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+    </nav>
+</div>
+<header id="body-header-mobile">
+    <div class="Name text-center">
+        TAMAGHAN MAURYA
+    </div>
+</header>
 <main>
-    <!-----------------------------------------------------ABOUT------------------------------------------------------------------>
+    <!-----------------------------------------------ABOUT------------------------------------------------------------------>
     <section id="about">
+        <div id="about-mobile">
+            <div data-aos-once="true" data-aos="zoom-out" class="my-image">
+                <img src="images/tg.JPG" alt="image" width="743" height="743">
+            </div>
+        </div>
         <div id="about-description">
             <p>
                 I am Computer Science Undergraduate with strong Critical
                 thinking/problem-solving skills and leadership qualities.
-                Currently a Senior at University at Buffalo. Acknowledged for
-                data structure, logic handling, front-end coding and software programming. I am highly
-                interested in automation part of the technology industry, with machine learning
+                Currently a Senior at University at Buffalo. Acknowledged
+                for data structure, logic handling, front-end coding and
+                software programming. I am highly interested in automation
+                part of the technology industry, with machine learning
                 and artificial intelligence.
             </p>
         </div>
@@ -157,16 +205,18 @@
             </div>
             <div class="timeline-divider">
                 <div class="timeline-traveller">
-                    <div>
-                        <i class="fas fa-car-side" style="font-size: 30px"></i>
-                    </div>
+                    <i class="fas fa-car-side" style="font-size: 30px"></i>
                 </div>
             </div>
         </div>
+        <div id="edu-container-mobile">
+            here
+        </div>
+
     </section>
-    <!---------------------------------------------------SKILLS----------------------------------------------------------->
+    <!---------------------------------------------SKILLS----------------------------------------------------------->
     <section id="skills">
-        <div data-aos-once="true" data-aos="zoom-in" class="section-heading wow">
+        <div data-aos-once="true" data-aos="zoom-in" class="section-heading">
             <h1>
             <span>
                 <i class="fas fa-laptop-code"></i>
@@ -176,6 +226,7 @@
             </span>
             </h1>
         </div>
+
         <div>
             <h1 class="subheading">
                 Languages
@@ -185,14 +236,14 @@
             <div class="skill-progress">
                 <div data-aos="fade-right" class="full skill-filler">
                     <div class="skill-name ">
-                     C/C++
+                        C/C++
                     </div>
                 </div>
             </div>
             <div class="skill-progress">
                 <div data-aos="fade-right" class="eighty skill-filler">
                     <div class="skill-name">
-                      JAVA
+                        JAVA
                     </div>
                 </div>
             </div>
@@ -213,14 +264,14 @@
             <div class="skill-progress">
                 <div data-aos="fade-right" class="eighty skill-filler">
                     <div class="skill-name">
-                         CSS
+                        CSS
                     </div>
                 </div>
             </div>
             <div class="skill-progress">
                 <div data-aos="fade-right" class="eighty skill-filler">
                     <div class="skill-name">
-                         JavaScript
+                        JavaScript
                     </div>
                 </div>
             </div>
@@ -234,14 +285,14 @@
             <div class="skill-progress">
                 <div data-aos="fade-right" class="eighty skill-filler">
                     <div class="skill-name">
-                         Verilog
+                        Verilog
                     </div>
                 </div>
             </div>
             <div class="skill-progress">
                 <div data-aos="fade-right" class="fifty skill-filler">
                     <div class="skill-name">
-                         Ocaml
+                        Ocaml
                     </div>
                 </div>
             </div>
@@ -271,7 +322,7 @@
                 </div>
             </div>
             <div data-aos="flip-up" class="system-box">
-                <img src="images/rasp.png" alt="Raspbian" class="skill-logo">
+                <img src="images/Rasp.png" alt="Raspbian" class="skill-logo">
                 <div class="logo-name">
                     <h1> Raspbian </h1>
                 </div>
@@ -282,7 +333,7 @@
                 Softwares
             </h1>
         </div>
-        <div class="subheading-container">
+        <div class="subheading-container sof">
             <div data-aos="flip-up" class="system-box ">
                 <img src="images/visualcode.png" alt="image" class="skill-logo">
                 <div class="logo-name">
@@ -302,8 +353,6 @@
                     <h1> PyCharm </h1>
                 </div>
             </div>
-        </div>
-        <div class="subheading-container">
             <div data-aos="flip-up" class="system-box">
                 <img src="images/webstorm.png" alt="image" class="skill-logo">
                 <div class="logo-name">
@@ -374,7 +423,6 @@
             </div>
         </div>
     </section>
-
     <!------------------------------------------MY EXPERIENCE-------------------------------------------->
     <section id="exp">
         <div data-aos-once="true" data-aos="zoom-in" class="section-heading wow">
@@ -408,7 +456,7 @@
                     </ul>
                 </div>
                 <div class="link-box">
-                    <a type="button" class="link-box-button" target="_blank"
+                    <a class="link-box-button" target="_blank"
                        href="https://github.com/vtattyba/University-at-Buffalo-Micro-g-NExT-Team-"><span> <i
                             class="fab fa-github"> </i> </span>GitHub</a>
                     <a class="link-box-button" target="_blank"
@@ -436,10 +484,10 @@
                     </ul>
                 </div>
                 <div class="link-box">
-                    <a type="button" class="link-box-button" target="_blank"
+                    <a  class="link-box-button" target="_blank"
                        href="http://engineering.buffalo.edu/home/academics/beyond/elp.html"><span> <i
                             class="fas fa-external-link-square-alt"> </i> </span>Link</a>
-                    <a type="button" class="link-box-button" target="_blank"
+                    <a class="link-box-button" target="_blank"
                        href="documents/Spring%202020%20Documentation.pdf"><span> <i
                             class="fas fa-external-link-square-alt"> </i> </span>Report</a>
                 </div>
@@ -463,7 +511,7 @@
                     </ul>
                 </div>
                 <div class="link-box">
-                    <a type="button" class="link-box-button" target="_blank"
+                    <a  class="link-box-button" target="_blank"
                        href="http://www.buffalo.edu/ubit/get-help/get-help-from-your-department/urh.html"><span> <i
                             class="fas fa-external-link-square-alt"> </i> </span>Link</a>
                 </div>
@@ -482,9 +530,10 @@
                             student
                             learning.
                         </li>
+                    </ul>
                 </div>
                 <div class="link-box">
-                    <a type="button" class="link-box-button" target="_blank"
+                    <a  class="link-box-button" target="_blank"
                        href="https://trpws2015.wordpress.com"><span> <i
                             class="fas fa-external-link-square-alt"> </i> </span>Link</a>
                     <a class="link-box-button" target="_blank" href="documents/NGO.pdf"><span> <i
@@ -494,7 +543,7 @@
             <div class="timeline-divider">
                 <div class="timeline-traveller">
                     <div>
-                        <i class="fas fa-plane"  style="font-size: 30px" ></i>
+                        <i class="fas fa-plane" style="font-size: 30px"></i>
                     </div>
                 </div>
             </div>
@@ -537,9 +586,9 @@
                     and which path to take next to avoid a collision.<br>
                 </p>
                 <div class="link-box">
-                    <a type="button" class="link-box-button" target="_blank"
+                    <a  class="link-box-button" target="_blank"
                        href="https://github.com/vtattyba/VisionAssist-"><span> <i class="fab fa-github"> </i> </span>GitHub</a>
-                    <a type="button" class="link-box-button" target="_blank"
+                    <a class="link-box-button" target="_blank"
                        href="https://devpost.com/software/vision_assist"><span> <i
                             class="fas fa-external-link-square-alt"> </i> </span>Devpost</a>
                 </div>
@@ -563,7 +612,7 @@
                     CSS/HTML.<br>
                 </p>
                 <div class="link-box">
-                    <a type="button" class="link-box-button" target="_blank"
+                    <a  class="link-box-button" target="_blank"
                        href="https://github.com/tamaghan/Resume_Project"><span> <i class="fab fa-github"> </i> </span>GitHub</a>
                 </div>
             </div>
@@ -585,11 +634,12 @@
                     the database.<br>
                 </p>
                 <div class="link-box">
-                    <a type="button" class="link-box-button" target="_blank"
+                    <a  class="link-box-button" target="_blank"
                        href="https://tamaghan.github.io"><span> <i
                             class="fas fa-external-link-square-alt"> </i> </span>Link</a>
-                    <a type="button" class="link-box-button" target="_blank"
-                       href="https://github.com/tamaghan/tamaghan.github.io"><span> <i class="fab fa-github"> </i> </span>GitHub</a>
+                    <a  class="link-box-button" target="_blank"
+                       href="https://github.com/tamaghan/tamaghan.github.io"><span> <i
+                            class="fab fa-github"> </i> </span>GitHub</a>
                 </div>
             </div>
             <hr>
@@ -610,10 +660,10 @@
                     HTML,CSS, Docker and Django.<br>
                 </p>
                 <div class="link-box">
-<!--                    <a type="button" class="link-box-button" target="_blank"-->
-<!--                       href="https://tamaghan.github.io"><span> <i-->
-<!--                            class="fas fa-external-link-square-alt"> </i> </span>Link</a>-->
-                    <a type="button" class="link-box-button" target="_blank"
+                    <!--                    <a type="button" class="link-box-button" target="_blank"-->
+                    <!--                       href="https://tamaghan.github.io"><span> <i-->
+                    <!--                            class="fas fa-external-link-square-alt"> </i> </span>Link</a>-->
+                    <a  class="link-box-button" target="_blank"
                        href="https://github.com/vtattyba/SM_CSE312"><span> <i class="fab fa-github"> </i> </span>GitHub</a>
                 </div>
             </div>
@@ -635,7 +685,7 @@
                     game built with JAVA GUI inn Eclipse.<br>
                 </p>
                 <div class="link-box">
-                    <a type="button" class="link-box-button" target="_blank"
+                    <a  class="link-box-button" target="_blank"
                        href="https://github.com/tamaghan/Code_Names"><span> <i class="fab fa-github"> </i> </span>GitHub</a>
                 </div>
             </div>
@@ -657,7 +707,7 @@
                     <br>
                 </p>
                 <div class="link-box">
-                    <a type="button" class="link-box-button" target="_blank"
+                    <a  class="link-box-button" target="_blank"
                        href="https://github.com/tamaghan/Music-player-frontend"><span> <i
                             class="fab fa-github"> </i> </span>GitHub</a>
                 </div>
@@ -687,7 +737,6 @@
             </div>
         </div>
     </section>
-
     <!--------------------------------------------CONTACT-------------------------------------------->
     <section id="contact">
         <div data-aos-once="true" data-aos="zoom-in" class="section-heading wow">
@@ -704,12 +753,12 @@
             <div id="contact-box">
                 <h3 style="margin-bottom: 25px;"> Get In touch </h3>
                 <div id="resume">
-                    <a type="button" class="contact-button" href="documents/Tamaghan%20Maurya%20Resume.pdf"
+                    <a class="contact-button" href="documents/Tamaghan%20Maurya%20Resume.pdf"
                        target="_blank"><span> <i class="fas fa-file-download"> </i> </span>Resume</a>
-                    <a type="button" class="contact-button" target="_blank"
+                    <a  class="contact-button" target="_blank"
                        href="https://tamaghanm.wixsite.com/tgclicks"><span> <i class="fas fa-camera-retro"> </i> </span>Photography
                         skills</a>
-                    <a type="button" class="contact-button" target="_blank"
+                    <a  class="contact-button" target="_blank"
                        href="https://www.linkedin.com/in/tamaghan/"><span> <i class="fas fa-rocket"> </i> </span>Hire Me</a>
                 </div>
 
@@ -751,6 +800,15 @@
             </div>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
     <script src="aos.js"></script>
     <script>
         AOS.init();
