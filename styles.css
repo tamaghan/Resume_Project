@@ -514,10 +514,12 @@ section:nth-child(2n + 1) {
     #body-header-mobile{
         background-image: url("images/b2.jpg");
         background-position: center;
-        background-size:101%;
+        /*background-size:101%;*/
+        background-size:cover;
         width:100%;
         background-repeat: no-repeat;
-        background-attachment: scroll;
+        /*background-attachment: scroll;*/
+        background-attachment: fixed;
         height: 150vw;
         opacity: 0.9;
     }
