@@ -513,9 +513,11 @@ section:nth-child(2n + 1) {
     }
     #body-header-mobile{
         display: block;
-        background-image:url("images/b1.jpg");
+        background-image:url("images/b2.jpg");
+        background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        background-position: center;
         height: 150vw;
         opacity: 0.9;
     }
