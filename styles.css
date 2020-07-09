@@ -514,9 +514,9 @@ section:nth-child(2n + 1) {
     #body-header-mobile{
         background-image: url("images/b2.jpg");
         background-position: center;
-        /*background-size: cover;*/
+        background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment: scroll;
         height: 150vw;
         opacity: 0.9;
     }
