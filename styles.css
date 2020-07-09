@@ -518,11 +518,9 @@ section:nth-child(2n + 1) {
     #body-header-mobile{
         background-image: url("images/b2.jpg");
         background-position: center;
-        background-size:150%;
-        /*background-size: 101%;*/
+        background-size: 130%;
         width:100%;
-        background-attachment: fixed;
-        /*background-attachment: scroll;*/
+        background-attachment: scroll;
         height: 150vw;
         opacity: 0.9;
     }
@@ -643,5 +641,8 @@ section:nth-child(2n + 1) {
     }
     #contact-container-mobile{
         width: 100%;
+    }
+    .skill-progress {
+        margin: 15px;
     }
 }
