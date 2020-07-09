@@ -264,7 +264,6 @@ section:nth-child(2n + 1) {
     justify-content: space-evenly;
 }
 .project-subheading{
-    font-family: Sans-Serif;
     font-weight: lighter;
 }
 .link-box-button{
@@ -286,13 +285,7 @@ section:nth-child(2n + 1) {
     color: white;
     text-decoration: none;
 }
-.project_para{
-    font-size: 20px;
-    font-family: Sans-Serif;
-    margin-top: -20px;
-    font-weight: lighter;
-    text-align: justify;
-}
+
 
 /*------------------------------------CONTACT SECTION------------------------------------*/
 
@@ -488,7 +481,12 @@ section:nth-child(2n + 1) {
         line-height: 30px;
         text-align: justify;
     }
-
+    .project_para{
+        font-size: 20px;
+        margin-top: -20px;
+        font-weight: lighter;
+        text-align: justify;
+    }
 }
 /*-----------PHONE---------------*/
 @media screen and (max-width: 600px) {
@@ -625,5 +623,14 @@ section:nth-child(2n + 1) {
         color: #727272;
         line-height: 30px;
         text-align: left;
+    }
+    #project-container-mobile{
+        width: 85%;
+    }
+    .project_para{
+        font-size: 4vw;
+        margin-top: -10px;
+        font-weight: lighter;
+        text-align: justify;
     }
 }
