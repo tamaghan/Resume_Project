@@ -4,7 +4,7 @@
 
 PULL=$1
 
-if [ $PULL == [yY] ]
+if [ $PULL == "y" ]
 then
 	echo "Pulling from git"
 fi
@@ -12,9 +12,11 @@ fi
 
 read -p "Commit message: " MM
 
-git add --all
-git commit -m ${MM}
-git push -u origin master
+git add --all && git commit -m ${MM} && git push -u origin master
 
-echo $?
+
+if [ $? -eq 0 ]
+then
+	echo "DONE"
+fi
 
