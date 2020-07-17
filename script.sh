@@ -4,7 +4,7 @@
 
 PULL=$1
 
-if [ $PULL == "y" ]
+if [ $PULL == [yY]* ]
 then
 	echo "Pulling from git"
 fi
