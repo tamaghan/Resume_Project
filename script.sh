@@ -6,18 +6,18 @@ PULL=$1
 
 if [ $PULL == 'y' ]
 then
-	echo "Pulling from git"
+	echo " ** Pulling from git ** "
 	git pull
 fi
 
 
-read -p "Commit message: " MM
+read -p " Commit message: " MM
 
 git add --all && git commit -m ${MM} && git push -u origin master || echo "FAILED"
 
 
 if [ $? -eq 0 ]
 then
-	echo "DONE"
+	echo " *** DONE *** "
 fi
 
