@@ -128,7 +128,7 @@ section:nth-child(2n + 1) {
     background-color: lightgrey;
     border-radius: 1rem;
     box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
-    margin: 25px;
+    margin: 25px 25px 25px 10px;
     overflow: hidden;
 }
 .skill-filler{
@@ -138,15 +138,24 @@ section:nth-child(2n + 1) {
     border-radius: 1rem;
     background-image: linear-gradient(50deg, #a1051d 0%, #f5515f 74%);
 }
+
+.lang-box{
+    display: flex;
+    justify-content: space-between;
+}
 .skill-name{
     font-weight: normal;
     letter-spacing: 2px;
     color: white;
     font-size: 1.2rem;
     margin-left: 15px;
-    padding-top: 6.5px;
+    padding-top: 4px;
 }
-
+.lang-logo{
+    margin: 25px 0 25px 25px;
+    width: 42px;
+    height: 39px;
+}
 
 .subheading{
     font-family: Verdana;
@@ -271,8 +280,9 @@ section:nth-child(2n + 1) {
     font-size: 0.95rem;
     width: 8rem;
     color: black;
+    box-shadow: -5px 10px 10px 0 #bababa;
     border-radius: 0.2rem;
-    border: none;
+    border: white;
     font-family: sans-serif;
     font-weight: lighter;
     letter-spacing: 0.05em;
@@ -373,6 +383,11 @@ section:nth-child(2n + 1) {
 .white {
     color: #ffffff;
 }
+#certificate{
+    padding-bottom: 20px;
+}
+
+
 
 @media screen and (min-width: 601px) {
     .section-heading {
@@ -432,7 +447,7 @@ section:nth-child(2n + 1) {
         /*background-color: #6ec330;*/
     }
     .sof{
-        width: 50%;
+        width: 60%;
     }
     .system-box{
         /*background-color: #b04436;*/
@@ -491,6 +506,51 @@ section:nth-child(2n + 1) {
     }
     #contact-container-mobile{
         display: none;
+    }
+    #cert-head{
+        font-size: 50px;
+    }
+    .cert-container{
+        box-sizing: border-box;
+        padding: 0 50px;
+        margin-bottom: 20px;
+        justify-content: space-around;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cert-box{
+        display: flex;
+        justify-content: center;
+        width: 35rem;
+        margin: 10px;
+        padding: 8px;
+    }
+    .cert-logo{
+        width: 90px;
+        height: 90px;
+        margin: auto;
+    }
+    .cert-detail{
+        border-radius: 0.5rem;
+        border: none;
+        background-color: #dedede;
+        box-shadow: -30px 0 30px 0 lightgrey;
+        padding: 15px;
+        margin-left: 30px;
+        width: 25rem;
+    }
+    .cert-name{
+        font-weight: 400;
+        font-size: 1.5rem ;
+    }
+    .cert-comp{
+        font-size: 1rem ;
+    }
+    .cert-date{
+        font-size: 1rem ;
+        color: #25374f;
+        font-weight: lighter;
     }
 }
 /*-----------PHONE---------------*/
@@ -643,7 +703,50 @@ section:nth-child(2n + 1) {
     #contact-container-mobile{
         width: 100%;
     }
-    .skill-progress {
-        margin: 15px;
+    #cert-head span{
+        font-size: 30px;
+    }
+    .cert-container{
+        box-sizing: border-box;
+        padding: 0 50px;
+        margin-bottom: 20px;
+        justify-content: space-around;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cert-box{
+        display: flex;
+        justify-content: center;
+        /*width: 45%;*/
+        margin: 10px;
+        padding: 8px;
+    }
+    .cert-logo{
+        width: 60px;
+        height: 60px;
+        margin: auto;
+    }
+    .cert-detail{
+        border-radius: 0.5rem;
+        border: none;
+        background-color: #dedede;
+        box-shadow: -30px 0 30px 0 lightgrey;
+        padding: 15px;
+        margin-left: 30px;
+        width: 15rem;
+    }
+    .cert-name{
+        font-weight: normal;
+        font-size: 20px ;
+    }
+    .cert-comp{
+        font-size: 20px ;
+        font-weight: lighter;
+    }
+    .cert-date{
+        font-size: 1rem ;
+        color: #25374f;
+        font-weight: lighter;
     }
 }
