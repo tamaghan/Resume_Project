@@ -23,12 +23,19 @@ section{
     flex-direction: column;
     align-items: center;
 }
-section:nth-child(2n) {
-    background-color: #9e9b9b29;
+/*section:nth-child(2n) {*/
+/*    background-color: white;*/
+/*}*/
+
+/*section:nth-child(2n + 1) {*/
+/*    background-color: #9e9b9b29;*/
+/*}*/
+.sec:nth-child(2n) {
+    background-color: white;
 }
 
-section:nth-child(2n + 1) {
-    background-color: white;
+.sec:nth-child(2n + 1) {
+    background-color: #9e9b9b29;
 }
 
 .timeline-divider .timeline-traveller {
@@ -55,30 +62,33 @@ section:nth-child(2n + 1) {
 .nav-list {
     list-style-type: none;
     font-size: 25px;
-    height: 60px;
     top: 20px;
+    margin: 0;
 }
 
 .nav-list li {
     display: inline-block;
     padding: 8px;
-    margin-top: -20px;
+        margin: 0;
+
 }
 .nav-list li a{
-    color: white;
+    color: #454545;
     text-decoration: none;
-    font-weight: 400;
+    /*font-weight: 400;*/
+        font-weight: lighter;
+
     transition: color 0.5s, border-bottom 1s;
 }
 .nav-list li a:hover {
-    color: #000000;
+    color: #e2e2e2;
 }
 .text-center{
     text-align: center;
 }
 /*------------------------------------name and image------------------------------------*/
 #name-container {
-    margin-top: 20vh;
+    margin-top: 30vh;
 }
 /*------------------------------------ABOUT SECTION------------------------------------*/
 #about{
@@ -101,7 +111,8 @@ section:nth-child(2n + 1) {
     border-style: solid;
     border-color: white;
     border-width: 4px;
-    box-shadow: 1px 1px 10px 2px lightgrey;
+    box-shadow: 0px 15px 15px 0 #bababa;
+    /*box-shadow: 1px 1px 10px 2px lightgrey;*/
 }
 /*------------------------------------EDUCATION------------------------------------*/
 #edu{
@@ -381,7 +392,8 @@ section:nth-child(2n + 1) {
    font-family: Sans-Serif;
 }
 .white {
-    color: #ffffff;
+    color: #343434;
+    font-weight: lighter;
 }
 #certificate{
     padding-bottom: 20px;
@@ -390,6 +402,11 @@ section:nth-child(2n + 1) {
 
 
 @media screen and (min-width: 601px) {
+    .desk-nav{
+        /*background-color: rgba(0, 0, 0, 0.47);*/
+        backdrop-filter: blur(10px);
+        z-index: 4;
+    }
     .section-heading {
         width: auto;
         padding:  20px 10px 10px ;
@@ -556,6 +573,9 @@ section:nth-child(2n + 1) {
 }
 /*-----------PHONE---------------*/
 @media screen and (max-width: 600px) {
+    .desk-nav{
+        display: none;
+    }
     .section-heading {
         width: auto;
         padding:  20px 10px 10px ;

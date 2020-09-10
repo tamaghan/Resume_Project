@@ -17,9 +17,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 <body>
-<header id="body-header">
-    <nav>
+<nav class="fixed-top desk-nav">
         <ul class="nav-list text-center ">
+            <li>
+                 <button onclick="go_light()" type="button" class="btn btn-outline-light">Light</button>
+            </li>
             <li>
                 <a href="#"> Home </a>
             </li>
@@ -41,8 +43,12 @@
             <li>
                 <a href="#contact">Contact</a>
             </li>
+            <li>
+                <button onclick="go_dark()" type="button" class="btn btn-outline-dark">Dark</button>
+            </li>
         </ul>
-    </nav>
+</nav>
+<header id="body-header">
     <div id="name-container">
         <div class="text-center">
             <h1 class="animated jello Name">
@@ -55,7 +61,7 @@
     </div>
 </header>
 <div id="nav-mobile" class="fixed-top nav-mobile" style="width: 100%">
-    <div class="collapse" id="navbarToggleExternalContent" style="background-color:#25374f;width: 100%">
+    <div class="collapse" id="navbarToggleExternalContent" style="backdrop-filter: blur(10px);width: 100%">
         <ul class="nav justify-content-center ">
             <li class="nav-item">
                 <a class="nav-link white" href="#">Home</a>
@@ -95,7 +101,7 @@
     </div>
 </div>
 <!-----------------------------------------------ABOUT------------------------------------------------------------------>
-<section id="about">
+<section id="about" class="sec">
     <div id="about-mobile">
         <div data-aos-once="true" data-aos="zoom-out" class="my-image">
             <img alt="image" height="1112" src="images/tg.JPG" width="1112">
@@ -111,10 +117,11 @@
             part of the technology industry, with machine learning
             and artificial intelligence.
         </p>
+
     </div>
 </section>
 <!--------------------------------------------MY EDUCATION-------------------------------------------->
-<section id="edu">
+<section id="edu" class="sec">
     <div data-aos-once="true" data-aos="zoom-in" class="section-heading">
         <h1>
             <span>
@@ -294,7 +301,7 @@
 
 </section>
 <!---------------------------------------------SKILLS----------------------------------------------------------->
-<section id="skills">
+<section id="skills" class="sec">
     <div data-aos-once="true" data-aos="zoom-in" class="section-heading">
         <h1>
             <span>
@@ -568,7 +575,7 @@
     </div>
 </section>
 <!------------------------------------------MY EXPERIENCE-------------------------------------------->
-<section id="exp">
+<section id="exp" class="sec">
     <div data-aos-once="true" data-aos="zoom-in" class="section-heading exp">
         <h1>
             <span>
@@ -782,7 +789,7 @@
     </div>
 </section>
 <!--------------------------------------------PROJECTS-------------------------------------------->
-<section id="projects">
+<section id="projects" class="sec">
     <div data-aos-once="true" data-aos="zoom-in" class="section-heading wow">
         <h1>
             <span>
@@ -1235,7 +1242,7 @@
     </div>
 </section>
 <!--------------------------------------------Certificates-------------------------------------------->
-<section id="certificate">
+<section id="certificate" class="sec">
 
     <div data-aos-once="true" data-aos="zoom-in" class="section-heading">
         <h1 id="cert-head">
@@ -1327,7 +1334,7 @@
 
 </section>
 <!--------------------------------------------CONTACT-------------------------------------------->
-<section id="contact">
+<section id="contact" class="sec">
     <div data-aos-once="true" data-aos="zoom-in" class="section-heading">
         <h1>
             <span>
