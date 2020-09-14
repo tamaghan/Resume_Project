@@ -12,6 +12,7 @@ function go_dark() {
     var back_sec2 = document.querySelectorAll(".sec:nth-child(2n + 1)");
     var navlist = document.querySelectorAll(".nav-list li a");
     var headers = document.querySelectorAll(".section-heading-sp");
+    var headers_icon = document.querySelectorAll(".heading-icon");
     var logo = document.querySelectorAll(".site-logo path");
     var exp_head = document.querySelectorAll(".timeline-designation");
     var car_plane = document.querySelectorAll(".timeline-divider i");
@@ -58,6 +59,7 @@ function go_dark() {
     }
     for (let i = 0; i < headers.length; i++) {
         headers[i].style.backgroundImage = "linear-gradient(50deg, #fbb040 0%, #f9ed32 74%)";
+        headers_icon[i].style.backgroundImage = "linear-gradient(50deg, #fbb040 0%, #f9ed32 74%)";
     }
     for (let i = 0; i < back_sec.length; i++) {
         back_sec[i].style.backgroundColor = "#292929";
@@ -128,8 +130,11 @@ function go_light() {
         exp_info[i].style.color = "#727272";
     }
     var headers = document.querySelectorAll(".section-heading-sp");
+    var headers_icon = document.querySelectorAll(".heading-icon");
+
     for (let i = 0; i < headers.length; i++) {
         headers[i].style.backgroundImage = "linear-gradient(50deg, #3663d6 0%, #27c6b9 74%)";
+        headers_icon[i].style.backgroundImage = "linear-gradient(50deg, #3663d6 0%, #27c6b9 74%)";
     }
     var car_plane = document.querySelectorAll(".timeline-divider i");
     for (let i = 0; i < car_plane.length; i++) {
