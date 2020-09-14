@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>TAMAGHAN MAURYA</title>
-    <link rel="icon" href="images/wow1.png">
+    <link rel="icon" href="images/logo.png">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -18,50 +18,107 @@
 </head>
 <body>
 <nav class="fixed-top desk-nav">
-        <ul class="nav-list text-center ">
-            <li>
-                 <button onclick="go_light()" type="button" class="btn btn-outline-light">Light</button>
-            </li>
-            <li>
-                <a href="#"> Home </a>
-            </li>
-            <li>
-                <a href="#about"> About </a>
-            </li>
-            <li>
-                <a href="#edu">Education</a>
-            </li>
-            <li>
-                <a href="#skills"> Skills </a>
-            </li>
-            <li>
-                <a href="#exp">Experience</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-            <li>
-                <button onclick="go_dark()" type="button" class="btn btn-outline-dark">Dark</button>
-            </li>
-        </ul>
+
+    <ul class="nav-list text-center ">
+        <li style="float: left;">
+            <svg width="43" height="43" viewBox="0 0 162 162" fill="none" xmlns="http://www.w3.org/2000/svg"
+                 class="site-logo">
+                <path d="M28.7066 24.992C29.5706 26.336 31.3466 28.928 34.0346 32.768C36.8186 36.512 39.9866 40.88 43.5386 45.872C47.1866 50.864 51.0266 56.192 55.0586 61.856C59.0906 67.424 62.8826 72.704 66.4346 77.696C69.9866 82.592 73.0586 86.864 75.6506 90.512C78.3386 94.16 80.1146 96.56 80.9786 97.712C81.2666 97.232 82.1786 95.936 83.7146 93.824C85.2506 91.712 87.1226 89.072 89.3306 85.904C91.6346 82.736 94.2266 79.184 97.1066 75.248C99.9866 71.216 102.915 67.136 105.891 63.008C108.963 58.784 111.939 54.608 114.819 50.48C117.795 46.352 120.531 42.608 123.027 39.248C125.523 35.792 127.635 32.816 129.363 30.32C131.187 27.728 132.483 25.952 133.251 24.992V134H116.547V75.536C116.547 74.768 116.595 73.952 116.691 73.088C116.883 72.224 116.979 71.6 116.979 71.216C116.115 72.368 114.723 74.336 112.803 77.12C110.979 79.808 108.819 82.928 106.323 86.48C103.923 89.936 101.379 93.632 98.6906 97.568C96.0026 101.408 93.4586 105.056 91.0586 108.512C88.6586 111.968 86.5466 115.04 84.7226 117.728C82.8986 120.32 81.6506 122.144 80.9786 123.2C80.3066 122.336 78.9626 120.56 76.9466 117.872C75.0266 115.088 72.7226 111.872 70.0346 108.224C67.4426 104.576 64.6586 100.688 61.6826 96.56C58.8026 92.432 56.1146 88.592 53.6186 85.04C51.1226 81.488 48.9626 78.464 47.1386 75.968C45.3146 73.376 44.2586 71.792 43.9706 71.216C43.9706 71.6 44.0186 72.224 44.1146 73.088C44.3066 73.952 44.4026 74.768 44.4026 75.536V134H28.7066V24.992Z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M161 1H1V161H161V1ZM0 0V162H162V0H0Z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M154 8H8V154H154V8ZM7 7V155H155V7H7Z"/>
+                <path d="M107.5 37.5L118 23H81H45L54 37.5H75V134H87.5V37.5H107.5Z"/>
+            </svg>
+        </li>
+
+        <li>
+            <a href="#"> Home </a>
+        </li>
+        <li>
+            <a href="#about"> About </a>
+        </li>
+        <li>
+            <a href="#edu">Education</a>
+        </li>
+        <li>
+            <a href="#skills"> Skills </a>
+        </li>
+        <li>
+            <a href="#exp">Experience</a>
+        </li>
+        <li>
+            <a href="#projects">Projects</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+        <li style="float: right; margin-top: 5px">
+            <i id="dark-bulb-desk" onclick="go_dark()" class="fas fa-lightbulb darkmode-full"> </i>
+            <i id="light-bulb-desk" onclick="go_light()" class="far fa-lightbulb darkmode"> </i>
+        </li>
+
+    </ul>
 </nav>
 <header id="body-header">
     <div id="name-container">
-        <div class="text-center">
-            <h1 class="animated jello Name">
-                TAMAGHAN MAURYA
-            </h1>
+        <img src="images/macbook.png" class="mac content" data-0="display:block;transform: scale(0.5); "
+             data-500=" opacity:1;transform: scale(1.6); top:20px "
+             data-1300="  opacity:1;   top:-290px" data-1800="display:none;" alt="stars">
+        <div class="text-center Name">
+            <br>
+            <br>
+            <br>
+            <svg data-0="width:400; height:50" data-500="width:1000; height:90" viewBox="0 0 1248 96" fill="none"
+                 xmlns="http://www.w3.org/2000/svg" id="my-name">
+                <path d="M61.72 6.36V15.24H38.92V90H28V15.24H5.08002V6.36H61.72Z" stroke="white" stroke-width="5"
+                      mask="url(#path-1-outside-1)"/>
+                <path d="M128.202 71.4H91.7219L85.0019 90H73.4819L103.722 6.84H116.322L146.442 90H134.922L128.202 71.4ZM125.082 62.52L109.962 20.28L94.8419 62.52H125.082Z"
+                      stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                <path d="M248.061 6.96V90H237.141V28.08L209.541 90H201.861L174.141 27.96V90H163.221V6.96H174.981L205.701 75.6L236.421 6.96H248.061Z"
+                      stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                <path d="M319.621 71.4H283.141L276.421 90H264.901L295.141 6.84H307.741L337.861 90H326.341L319.621 71.4ZM316.501 62.52L301.381 20.28L286.261 62.52H316.501Z"
+                      stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                <path d="M418 30.6C415.68 25.72 412.32 21.96 407.92 19.32C403.52 16.6 398.4 15.24 392.56 15.24C386.72 15.24 381.44 16.6 376.72 19.32C372.08 21.96 368.4 25.8 365.68 30.84C363.04 35.8 361.72 41.56 361.72 48.12C361.72 54.68 363.04 60.44 365.68 65.4C368.4 70.36 372.08 74.2 376.72 76.92C381.44 79.56 386.72 80.88 392.56 80.88C400.72 80.88 407.44 78.44 412.72 73.56C418 68.68 421.08 62.08 421.96 53.76H388.6V44.88H433.6V53.28C432.96 60.16 430.8 66.48 427.12 72.24C423.44 77.92 418.6 82.44 412.6 85.8C406.6 89.08 399.92 90.72 392.56 90.72C384.8 90.72 377.72 88.92 371.32 85.32C364.92 81.64 359.84 76.56 356.08 70.08C352.4 63.6 350.56 56.28 350.56 48.12C350.56 39.96 352.4 32.64 356.08 26.16C359.84 19.6 364.92 14.52 371.32 10.92C377.72 7.23999 384.8 5.39999 392.56 5.39999C401.44 5.39999 409.28 7.6 416.08 12C422.96 16.4 427.96 22.6 431.08 30.6H418Z"
+                      stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                <path d="M516.078 6.36V90H505.158V52.08H462.558V90H451.638V6.36H462.558V43.08H505.158V6.36H516.078Z"
+                      stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                <path d="M587.764 71.4H551.284L544.564 90H533.044L563.284 6.84H575.884L606.004 90H594.484L587.764 71.4ZM584.644 62.52L569.524 20.28L554.404 62.52H584.644Z"
+                      stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                <path d="M688.544 90H677.624L633.704 23.4V90H622.784V6.24H633.704L677.624 72.72V6.24H688.544V90Z"
+                      stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                <path d="M831.191 6.96V90H820.271V28.08L792.671 90H784.991L757.271 27.96V90H746.351V6.96H758.111L788.831 75.6L819.551 6.96H831.191Z"
+                      stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                <path d="M902.75 71.4H866.27L859.55 90H848.03L878.27 6.84H890.87L920.99 90H909.47L902.75 71.4ZM899.63 62.52L884.51 20.28L869.39 62.52H899.63Z"
+                      stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                <path d="M948.45 6.36V59.28C948.45 66.72 950.25 72.24 953.85 75.84C957.53 79.44 962.61 81.24 969.09 81.24C975.49 81.24 980.49 79.44 984.09 75.84C987.77 72.24 989.61 66.72 989.61 59.28V6.36H1000.53V59.16C1000.53 66.12 999.13 72 996.33 76.8C993.53 81.52 989.73 85.04 984.93 87.36C980.21 89.68 974.89 90.84 968.97 90.84C963.05 90.84 957.69 89.68 952.89 87.36C948.17 85.04 944.41 81.52 941.61 76.8C938.89 72 937.53 66.12 937.53 59.16V6.36H948.45Z"
+                      stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                <path d="M1066.39 90L1046.47 55.8H1033.27V90H1022.35V6.36H1049.35C1055.67 6.36 1060.99 7.44 1065.31 9.6C1069.71 11.76 1072.99 14.68 1075.15 18.36C1077.31 22.04 1078.39 26.24 1078.39 30.96C1078.39 36.72 1076.71 41.8 1073.35 46.2C1070.07 50.6 1065.11 53.52 1058.47 54.96L1079.47 90H1066.39ZM1033.27 47.04H1049.35C1055.27 47.04 1059.71 45.6 1062.67 42.72C1065.63 39.76 1067.11 35.84 1067.11 30.96C1067.11 26 1065.63 22.16 1062.67 19.44C1059.79 16.72 1055.35 15.36 1049.35 15.36H1033.27V47.04Z"
+                      stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                <path d="M1157.51 6.36L1130.27 58.44V90H1119.35V58.44L1091.99 6.36H1104.11L1124.75 48.72L1145.39 6.36H1157.51Z"
+                      stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+                <path d="M1222.07 71.4H1185.59L1178.87 90H1167.35L1197.59 6.84H1210.19L1240.31 90H1228.79L1222.07 71.4ZM1218.95 62.52L1203.83 20.28L1188.71 62.52H1218.95Z"
+                      stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+            </svg>
+            <br>
+            <br>
+            <svg width="83" height="83" viewBox="0 0 162 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="m"
+                      d="M28.7066 24.992C29.5706 26.336 31.3466 28.928 34.0346 32.768C36.8186 36.512 39.9866 40.88 43.5386 45.872C47.1866 50.864 51.0266 56.192 55.0586 61.856C59.0906 67.424 62.8826 72.704 66.4346 77.696C69.9866 82.592 73.0586 86.864 75.6506 90.512C78.3386 94.16 80.1146 96.56 80.9786 97.712C81.2666 97.232 82.1786 95.936 83.7146 93.824C85.2506 91.712 87.1226 89.072 89.3306 85.904C91.6346 82.736 94.2266 79.184 97.1066 75.248C99.9866 71.216 102.915 67.136 105.891 63.008C108.963 58.784 111.939 54.608 114.819 50.48C117.795 46.352 120.531 42.608 123.027 39.248C125.523 35.792 127.635 32.816 129.363 30.32C131.187 27.728 132.483 25.952 133.251 24.992V134H116.547V75.536C116.547 74.768 116.595 73.952 116.691 73.088C116.883 72.224 116.979 71.6 116.979 71.216C116.115 72.368 114.723 74.336 112.803 77.12C110.979 79.808 108.819 82.928 106.323 86.48C103.923 89.936 101.379 93.632 98.6906 97.568C96.0026 101.408 93.4586 105.056 91.0586 108.512C88.6586 111.968 86.5466 115.04 84.7226 117.728C82.8986 120.32 81.6506 122.144 80.9786 123.2C80.3066 122.336 78.9626 120.56 76.9466 117.872C75.0266 115.088 72.7226 111.872 70.0346 108.224C67.4426 104.576 64.6586 100.688 61.6826 96.56C58.8026 92.432 56.1146 88.592 53.6186 85.04C51.1226 81.488 48.9626 78.464 47.1386 75.968C45.3146 73.376 44.2586 71.792 43.9706 71.216C43.9706 71.6 44.0186 72.224 44.1146 73.088C44.3066 73.952 44.4026 74.768 44.4026 75.536V134H28.7066V24.992Z"
+                      fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M161 1H1V161H161V1ZM0 0V162H162V0H0Z"
+                      id="outer-border"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M154 8H8V154H154V8ZM7 7V155H155V7H7Z"
+                      id="outer-border1"/>
+                <path id="t" d="M107.5 37.5L118 23H81H45L54 37.5H75V134H87.5V37.5H107.5Z" fill="white" stroke="white"/>
+            </svg>
         </div>
     </div>
-    <div data-aos-once="true" data-aos="zoom-out" class="my-image">
-        <img src="images/tg.JPG" alt="image" width="1112" height="1112">
+    <div class="my-image">
+        <img src="images/tg.JPG" alt="image" width="1112" height="1112" id="me-desk">
     </div>
 </header>
 <div id="nav-mobile" class="fixed-top nav-mobile" style="width: 100%">
-    <div class="collapse" id="navbarToggleExternalContent" style="backdrop-filter: blur(10px);width: 100%">
+    <div class="collapse" id="navbarToggleExternalContent"
+         style="backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); width: 100%">
         <ul class="nav justify-content-center ">
             <li class="nav-item">
                 <a class="nav-link white" href="#">Home</a>
@@ -87,28 +144,78 @@
         </ul>
     </div>
     <nav class="navbar navbar-dark ">
-        <button class="navbar-toggler" style="background-color: #25374f"
+        <button class="navbar-toggler"
+                style="backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); padding: 0; border: none"
                 type="button" data-toggle="collapse"
                 data-target="#navbarToggleExternalContent"
                 aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon "></span>
+             <span>
+                 <img src="images/TM_logo.png" style=" width: 50px; height: 50px;margin-top: -4px" id="phone-logo">
+             </span>
         </button>
+        <span>
+            <i id="dark-bulb" onclick="go_dark()" class="fas fa-lightbulb darkmode-full"> </i>
+            <i id="light-bulb" onclick="go_light()" class="far fa-lightbulb darkmode"> </i>
+        </span>
     </nav>
 </div>
 <div id="body-header-mobile">
     <div class="Name text-center">
-        TAMAGHAN MAURYA
+
+        <svg width="300" height="150" viewBox="0 0 558 223" fill="none" xmlns="http://www.w3.org/2000/svg" id="my-name">
+            <path d="M50.8085 6.08801V13.192H32.5685V73H23.8325V13.192H5.49652V6.08801H50.8085Z" stroke="white"
+                  stroke-width="5" mask="url(#path-1-outside-1)"/>
+            <path d="M103.994 58.12H74.81L69.434 73H60.218L84.41 6.47201H94.49L118.586 73H109.37L103.994 58.12ZM101.498 51.016L89.402 17.224L77.306 51.016H101.498Z"
+                  stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+            <path d="M199.882 6.56801V73H191.146V23.464L169.066 73H162.922L140.746 23.368V73H132.01V6.56801H141.418L165.994 61.48L190.57 6.56801H199.882Z"
+                  stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+            <path d="M257.129 58.12H227.945L222.569 73H213.353L237.545 6.47201H247.625L271.721 73H262.505L257.129 58.12ZM254.633 51.016L242.537 17.224L230.441 51.016H254.633Z"
+                  stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+            <path d="M335.833 25.48C333.977 21.576 331.288 18.568 327.768 16.456C324.248 14.28 320.153 13.192 315.48 13.192C310.809 13.192 306.585 14.28 302.809 16.456C299.097 18.568 296.153 21.64 293.977 25.672C291.865 29.64 290.809 34.248 290.809 39.496C290.809 44.744 291.865 49.352 293.977 53.32C296.153 57.288 299.097 60.36 302.809 62.536C306.585 64.648 310.809 65.704 315.48 65.704C322.009 65.704 327.385 63.752 331.609 59.848C335.833 55.944 338.296 50.664 339 44.008H312.312V36.904H348.312V43.624C347.801 49.128 346.073 54.184 343.129 58.792C340.185 63.336 336.313 66.952 331.513 69.64C326.713 72.264 321.368 73.576 315.48 73.576C309.272 73.576 303.608 72.136 298.488 69.256C293.368 66.312 289.305 62.248 286.297 57.064C283.353 51.88 281.88 46.024 281.88 39.496C281.88 32.968 283.353 27.112 286.297 21.928C289.305 16.68 293.368 12.616 298.488 9.73601C303.608 6.79201 309.272 5.32001 315.48 5.32001C322.584 5.32001 328.857 7.08001 334.297 10.6C339.801 14.12 343.801 19.08 346.297 25.48H335.833Z"
+                  stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+            <path d="M414.295 6.08801V73H405.559V42.664H371.479V73H362.743V6.08801H371.479V35.464H405.559V6.08801H414.295Z"
+                  stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+            <path d="M471.644 58.12H442.46L437.084 73H427.868L452.06 6.47201H462.14L486.236 73H477.02L471.644 58.12ZM469.148 51.016L457.052 17.224L444.956 51.016H469.148Z"
+                  stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+            <path d="M552.268 73H543.531L508.396 19.72V73H499.66V5.99201H508.396L543.531 59.176V5.99201H552.268V73Z"
+                  stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+            <path d="M153.408 150.568V217H144.672V167.464L122.592 217H116.448L94.2718 167.368V217H85.5358V150.568H94.9438L119.52 205.48L144.096 150.568H153.408Z"
+                  stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+            <path d="M210.655 202.12H181.471L176.095 217H166.879L191.071 150.472H201.151L225.247 217H216.031L210.655 202.12ZM208.159 195.016L196.063 161.224L183.967 195.016H208.159Z"
+                  stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+            <path d="M247.215 150.088V192.424C247.215 198.376 248.655 202.792 251.535 205.672C254.479 208.552 258.543 209.992 263.727 209.992C268.847 209.992 272.847 208.552 275.727 205.672C278.671 202.792 280.143 198.376 280.143 192.424V150.088H288.879V192.328C288.879 197.896 287.759 202.6 285.519 206.44C283.279 210.216 280.239 213.032 276.399 214.888C272.623 216.744 268.367 217.672 263.631 217.672C258.895 217.672 254.607 216.744 250.767 214.888C246.991 213.032 243.983 210.216 241.743 206.44C239.567 202.6 238.479 197.896 238.479 192.328V150.088H247.215Z"
+                  stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+            <path d="M341.564 217L325.628 189.64H315.068V217H306.332V150.088H327.932C332.988 150.088 337.244 150.952 340.7 152.68C344.22 154.408 346.844 156.744 348.572 159.688C350.3 162.632 351.164 165.992 351.164 169.768C351.164 174.376 349.82 178.44 347.132 181.96C344.508 185.48 340.54 187.816 335.228 188.968L352.028 217H341.564ZM315.068 182.632H327.932C332.668 182.632 336.22 181.48 338.588 179.176C340.956 176.808 342.14 173.672 342.14 169.768C342.14 165.8 340.956 162.728 338.588 160.552C336.284 158.376 332.732 157.288 327.932 157.288H315.068V182.632Z"
+                  stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+            <path d="M414.466 150.088L392.674 191.752V217H383.938V191.752L362.05 150.088H371.746L388.258 183.976L404.77 150.088H414.466Z"
+                  stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+            <path d="M466.113 202.12H436.929L431.553 217H422.337L446.529 150.472H456.609L480.705 217H471.489L466.113 202.12ZM463.617 195.016L451.521 161.224L439.425 195.016H463.617Z"
+                  stroke="white" stroke-width="5" mask="url(#path-1-outside-1)"/>
+        </svg>
+
+        <svg style="margin-top: 10px" width="100" height="100" viewBox="0 0 162 162" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <path id="m"
+                  d="M28.7066 24.992C29.5706 26.336 31.3466 28.928 34.0346 32.768C36.8186 36.512 39.9866 40.88 43.5386 45.872C47.1866 50.864 51.0266 56.192 55.0586 61.856C59.0906 67.424 62.8826 72.704 66.4346 77.696C69.9866 82.592 73.0586 86.864 75.6506 90.512C78.3386 94.16 80.1146 96.56 80.9786 97.712C81.2666 97.232 82.1786 95.936 83.7146 93.824C85.2506 91.712 87.1226 89.072 89.3306 85.904C91.6346 82.736 94.2266 79.184 97.1066 75.248C99.9866 71.216 102.915 67.136 105.891 63.008C108.963 58.784 111.939 54.608 114.819 50.48C117.795 46.352 120.531 42.608 123.027 39.248C125.523 35.792 127.635 32.816 129.363 30.32C131.187 27.728 132.483 25.952 133.251 24.992V134H116.547V75.536C116.547 74.768 116.595 73.952 116.691 73.088C116.883 72.224 116.979 71.6 116.979 71.216C116.115 72.368 114.723 74.336 112.803 77.12C110.979 79.808 108.819 82.928 106.323 86.48C103.923 89.936 101.379 93.632 98.6906 97.568C96.0026 101.408 93.4586 105.056 91.0586 108.512C88.6586 111.968 86.5466 115.04 84.7226 117.728C82.8986 120.32 81.6506 122.144 80.9786 123.2C80.3066 122.336 78.9626 120.56 76.9466 117.872C75.0266 115.088 72.7226 111.872 70.0346 108.224C67.4426 104.576 64.6586 100.688 61.6826 96.56C58.8026 92.432 56.1146 88.592 53.6186 85.04C51.1226 81.488 48.9626 78.464 47.1386 75.968C45.3146 73.376 44.2586 71.792 43.9706 71.216C43.9706 71.6 44.0186 72.224 44.1146 73.088C44.3066 73.952 44.4026 74.768 44.4026 75.536V134H28.7066V24.992Z"
+                  fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M161 1H1V161H161V1ZM0 0V162H162V0H0Z"
+                  id="outer-border"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M154 8H8V154H154V8ZM7 7V155H155V7H7Z"
+                  id="outer-border1"/>
+            <path id="t" d="M107.5 37.5L118 23H81H45L54 37.5H75V134H87.5V37.5H107.5Z" fill="white" stroke="white"/>
+        </svg>
+
     </div>
 </div>
 <!-----------------------------------------------ABOUT------------------------------------------------------------------>
 <section id="about" class="sec">
     <div id="about-mobile">
         <div data-aos-once="true" data-aos="zoom-out" class="my-image">
-            <img alt="image" height="1112" src="images/tg.JPG" width="1112">
+            <img alt="image" height="250" src="images/tg.JPG" width="250" id="me-mob">
         </div>
     </div>
     <div id="about-description">
-        <p>
+        <p id="about-description-p">
             I am Computer Science Undergraduate with strong Critical
             thinking/problem-solving skills and leadership qualities.
             Currently a Senior at University at Buffalo. Acknowledged
@@ -123,7 +230,7 @@
 <!--------------------------------------------MY EDUCATION-------------------------------------------->
 <section id="edu" class="sec">
     <div data-aos-once="true" data-aos="zoom-in" class="section-heading">
-        <h1>
+        <h1 class="section-heading-sp">
             <span>
                 <i class="fas fa-university"></i>
             </span>
@@ -303,7 +410,7 @@
 <!---------------------------------------------SKILLS----------------------------------------------------------->
 <section id="skills" class="sec">
     <div data-aos-once="true" data-aos="zoom-in" class="section-heading">
-        <h1>
+        <h1 class="section-heading-sp">
             <span>
                 <i class="fas fa-laptop-code"></i>
             </span>
@@ -577,7 +684,7 @@
 <!------------------------------------------MY EXPERIENCE-------------------------------------------->
 <section id="exp" class="sec">
     <div data-aos-once="true" data-aos="zoom-in" class="section-heading exp">
-        <h1>
+        <h1 class="section-heading-sp">
             <span>
                  <i class="fas fa-briefcase"></i>
             </span>
@@ -606,6 +713,9 @@
             <div class="link-box">
                 <a class="link-box-button" target="_blank"
                    href="https://buffalo.campuslabs.com/engage/organization/aiaa"><span> <i
+                        class="fas fa-external-link-square-alt"> </i> </span>Link</a>
+                <a class="link-box-button" target="_blank"
+                   href="https://www.ubaiaa.org"><span> <i
                         class="fas fa-external-link-square-alt"> </i> </span>Link</a>
             </div>
         </div>
@@ -715,6 +825,9 @@
                 <a class="link-box-button" target="_blank"
                    href="https://buffalo.campuslabs.com/engage/organization/aiaa"><span> <i
                         class="fas fa-external-link-square-alt"> </i> </span>Link</a>
+                <a class="link-box-button" target="_blank"
+                   href="https://www.ubaiaa.org"><span> <i
+                        class="fas fa-external-link-square-alt"> </i> </span>Link</a>
             </div>
         </div>
         <div class="timeline-box-mobile ">
@@ -791,7 +904,7 @@
 <!--------------------------------------------PROJECTS-------------------------------------------->
 <section id="projects" class="sec">
     <div data-aos-once="true" data-aos="zoom-in" class="section-heading wow">
-        <h1>
+        <h1 class="section-heading-sp">
             <span>
                   <i class="fas fa-project-diagram"></i>
             </span>
@@ -916,10 +1029,10 @@
             </ul>
             <div class="link-box">
                 <a class="link-box-button" target="_blank"
-                   href="https://tamaghan.github.io"><span> <i
+                   href="https://www.ubaiaa.org"><span> <i
                         class="fas fa-external-link-square-alt"> </i> </span>Link</a>
                 <a class="link-box-button" target="_blank"
-                   href="https://github.com/tamaghan/tamaghan.github.io"><span> <i
+                   href="https://github.com/UBAIAA/UBAIAA.github.io"><span> <i
                         class="fab fa-github"> </i> </span>GitHub</a>
             </div>
         </div>
@@ -1135,10 +1248,10 @@
             </ul>
             <div class="link-box">
                 <a class="link-box-button" target="_blank"
-                   href="https://tamaghan.github.io"><span> <i
+                   href="https://www.ubaiaa.org"><span> <i
                         class="fas fa-external-link-square-alt"> </i> </span>Link</a>
                 <a class="link-box-button" target="_blank"
-                   href="https://github.com/tamaghan/tamaghan.github.io"><span> <i
+                   href="https://github.com/UBAIAA/UBAIAA.github.io"><span> <i
                         class="fab fa-github"> </i> </span>GitHub</a>
             </div>
         </div>
@@ -1155,10 +1268,10 @@
                    </span>
             </p>
             <ul class="project_para">
-               <li>Designed a social media website for a full-stack web
-                application course project with a chat app. Utilized
-                   HTML,CSS, Docker and Django.<br></li>
-                 <li><u>Utilized</u>: HTML, CSS, JavaScript, AJAX, Docker, Django, Python, Misaka, Git.<br></li>
+                <li>Designed a social media website for a full-stack web
+                    application course project with a chat app. Utilized
+                    HTML,CSS, Docker and Django.<br></li>
+                <li><u>Utilized</u>: HTML, CSS, JavaScript, AJAX, Docker, Django, Python, Misaka, Git.<br></li>
             </ul>
             <div class="link-box">
                 <a class="link-box-button" target="_blank"
@@ -1179,8 +1292,8 @@
             </p>
             <ul class="project_para">
                 <li>Freshmen Year Project for Introduction to computer
-                science class. Developed a Team-based guessing
-                game built with JAVA GUI inn Eclipse.<br>
+                    science class. Developed a Team-based guessing
+                    game built with JAVA GUI inn Eclipse.<br>
                 <li><u>Utilized</u>: Java, GUI<br></li>
             </ul>
             <div class="link-box">
@@ -1202,7 +1315,7 @@
             </p>
             <ul class="project_para">
                 <li>Designed a music player website frontend interface, with interactive buttons and scroll bar. Web
-                Development project with pure CSS/HTML.
+                    Development project with pure CSS/HTML.
                     <br></li>
                 <li><u>Utilized</u>: HTML, CSS<br></li>
 
@@ -1245,7 +1358,7 @@
 <section id="certificate" class="sec">
 
     <div data-aos-once="true" data-aos="zoom-in" class="section-heading">
-        <h1 id="cert-head">
+        <h1 id="cert-head" class="section-heading-sp">
         <span>
              <i class="fa fa-certificate" aria-hidden="true"></i>
         </span>
@@ -1357,7 +1470,9 @@
                 <a class="contact-button" target="_blank"
                    href="https://www.linkedin.com/in/tamaghan/"><span> <i class="fas fa-rocket"> </i> </span>Hire Me</a>
             </div>
-
+            <div style="padding: 20px 0 20px 0">
+                <h3> Fun Fact: The background picture in header was taken by me in NYC</h3>
+            </div>
             <h3> My Address </h3>
             <div class="contact-info-container">
                 <i class="fas fa-map-marker-alt"></i>
@@ -1373,7 +1488,7 @@
                 <i class="far fa-envelope"></i>
                 <a style="text-decoration: none; color: white" target="_blank" href="mailto:tamaghan@bufalo.com">tamaghan@buffalo.com</a>
             </div>
-            <div id="footer">
+            <div style="margin-top: 10px" id="footer">
                 <div>
                     <p>Copyright Tamaghan Maurya © 2020</p>
                 </div>
@@ -1411,6 +1526,9 @@
                 <a class="contact-button" target="_blank"
                    href="https://www.linkedin.com/in/tamaghan/"><span> <i class="fas fa-rocket"> </i> </span>Hire Me</a>
             </div>
+            <div style="padding: 20px 0 20px 0">
+                <h3> Fun Fact: The background picture in header was taken by me in NYC</h3>
+            </div>
             <h3> My Address </h3>
             <div class="contact-info-container">
                 <i class="fas fa-map-marker-alt"></i>
@@ -1422,7 +1540,7 @@
                 <i class="fas fa-mobile-alt"></i>
                 <span style="color: white; text-decoration: none">716-380-8251</span>
             </div>
-            <div class="contact-info-container">
+            <div class="contact-info-container" style="margin-bottom: 20px">
                 <i class="far fa-envelope"></i>
                 <a style="text-decoration: none; color: white" target="_blank" href="mailto:tamaghan@bufalo.com">tamaghan@buffalo.com</a>
             </div>
@@ -1447,6 +1565,7 @@
         </div>
     </div>
 </section>
+<script src="js/skrollr.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -1457,7 +1576,13 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 <script src="aos.js"></script>
+<script src="script.js"></script>
 <script>
+    skrollr.init({
+        mobileCheck: function () {
+            return false;
+        }
+    });
     AOS.init();
 </script>
 </body>
