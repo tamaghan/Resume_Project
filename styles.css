@@ -843,8 +843,13 @@ section {
 
     #about-description {
         margin-top: -70px;
+        text-align: center;
     }
 
+    .my-stuff-card{
+    width: 20rem;
+        margin-bottom: 20px;
+    }
     #about-mobile {
         display: block;
     }
