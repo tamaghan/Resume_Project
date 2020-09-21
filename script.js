@@ -72,6 +72,8 @@ function go_dark() {
     document.getElementById("me-desk").style.boxShadow = "0px 15px 15px 0 #000000"
     document.getElementById("me-mob").style.boxShadow = "0px 15px 15px 0 #000000"
     document.getElementById("about-description-p").style.color = "white"
+    document.getElementById("my-stuff").style.color = "white"
+
 }
 
 function go_light() {
@@ -147,5 +149,6 @@ function go_light() {
     document.getElementById("body-header").style.backgroundColor = "#dbdbdb"
     document.getElementById("me-desk").style.boxShadow = "0px 15px 15px 0 #bababa"
     document.getElementById("me-mob").style.boxShadow = "0px 15px 15px 0 #bababa"
-    document.getElementById("about-description-p").style.color = "gray"
+    document.getElementById("about-description-p").style.color = "black"
+    document.getElementById("my-stuff").style.color = "black"
 }
