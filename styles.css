@@ -233,6 +233,7 @@ section {
     font-size: 30px;
     font-weight: 300;
     width: 100%;
+    margin-top: 2.5rem;
 }
 
 .blue {
@@ -362,6 +363,7 @@ section {
 
 .project_heading {
     font-size: 25px;
+    margin-bottom: 2rem;
 }
 
 .link-box {
@@ -375,12 +377,12 @@ section {
 }
 
 .link-box-button {
-    background: #dedede;
+    background: #ececec;
     font-size: 0.95rem;
     width: 8rem;
     color: black;
     box-shadow: -5px 10px 10px 0 #bababa;
-    border-radius: 0.2rem;
+    border-radius: 1rem;
     border: white;
     font-family: sans-serif;
     font-weight: lighter;
@@ -389,12 +391,14 @@ section {
     text-align: center;
     text-decoration: none;
     margin: 5px;
-    transition: color 0.3s;
+    -webkit-transition: color 0.1s ease-in, box-shadow 0.3s ease-out ;
+    transition: color 0.1s ease-in, box-shadow 0.3s ease-out;
 }
 
 .link-box-button:hover {
     background-image: linear-gradient(50deg, #6ec330 0%, #cbcb26 74%);
     color: white;
+    box-shadow: -16px 18px 20px 0px #bababa;
     text-decoration: none;
 }
 
@@ -648,7 +652,6 @@ section {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        /*margin-bottom: 20px;*/
         /*background-color: #6ec330;*/
     }
 
