@@ -374,12 +374,13 @@ section {
 
 .project-subheading {
     font-weight: lighter;
+    font-size: 20px;
 }
 
 .link-box-button {
     background: #ececec;
     font-size: 0.95rem;
-    width: 8rem;
+    /*width: 8rem;*/
     color: black;
     box-shadow: -5px 10px 10px 0 #bababa;
     border-radius: 1rem;
@@ -387,12 +388,12 @@ section {
     font-family: sans-serif;
     font-weight: lighter;
     letter-spacing: 0.05em;
-    padding: 0.8em 0.8em 0.78em;
+    padding: 0.8em 1em;
     text-align: center;
     text-decoration: none;
     margin: 5px;
     -webkit-transition: color 0.1s ease-in, box-shadow 0.3s ease-out ;
-    transition: color 0.1s ease-in, box-shadow 0.3s ease-out;
+    transition: transform 0.1s ease-in, color 0.1s ease-in, box-shadow 0.3s ease-out;
 }
 
 .link-box-button:hover {
@@ -400,6 +401,7 @@ section {
     color: white;
     box-shadow: -16px 18px 20px 0px #bababa;
     text-decoration: none;
+    transform: scale(1.5);
 }
 
 
