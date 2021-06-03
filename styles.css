@@ -376,12 +376,14 @@ section {
     margin-bottom: 2rem;
 }
 
+
 .project_heading >strong{
     background-image: linear-gradient(to right , #ad3c13, #d9561e);
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    font-weight: bolder;
 }
 
 
