@@ -27,11 +27,11 @@ section {
     z-index: 1;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
-    margin-top: -1.5rem;
+    margin-top: -1.9rem;
     box-shadow: 0px -14px 17px 10px #0000000a;
 }
 
-.sec{
+.sec {
     padding-bottom: 100px;
 }
 
@@ -60,7 +60,7 @@ section {
     transform: rotate(90deg);
     margin-top: -35px;
     display: block;
-    color: #2857a4;
+    color: #19627e;
     font-size: 1.4rem;
 }
 
@@ -376,6 +376,15 @@ section {
     margin-bottom: 2rem;
 }
 
+.project_heading >strong{
+    background-image: linear-gradient(to right , #ad3c13, #d9561e);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+
+
 .link-box {
     display: flex;
     flex-wrap: wrap;
@@ -402,7 +411,7 @@ section {
     text-align: center;
     text-decoration: none;
     margin: 5px;
-    -webkit-transition: color 0.1s ease-in, box-shadow 0.3s ease-out ;
+    -webkit-transition: color 0.1s ease-in, box-shadow 0.3s ease-out;
     transition: transform 0.1s ease-in, color ease-in, box-shadow 0.2s ease-out;
 }
 
@@ -418,7 +427,7 @@ section {
 /*------------------------------------CONTACT SECTION------------------------------------*/
 
 #contact {
-    background-image: linear-gradient(50deg, #834ca8 0%, #b04436 74%);
+    background-image: linear-gradient(to right, #0f2027 , #203a43, #2c5364);
     color: white;
 }
 
@@ -428,12 +437,13 @@ section {
 }
 
 .contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
-.contact-box h3 {
+#contact_subhead {
     color: white;
     font-weight: bold;
     font-size: 1.3rem;
@@ -449,7 +459,6 @@ section {
 .contact-info-container {
     margin-bottom: 3px;
     color: #d9dcdd;
-    font-size: 1rem;
 }
 
 .contact-info-container span {
@@ -458,6 +467,14 @@ section {
 
 .contact-info-container i {
     color: white;
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+.contact-info-container p {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: lighter;
 }
 
 .contact-button {
@@ -466,7 +483,8 @@ section {
     border-width: 2px;
     border-color: white;
     border-style: solid;
-    border-radius: 2px;
+    box-shadow: 9px 8px 5px 0px rgba(27, 27, 27, 0.22);
+    border-radius: 1rem;
     color: white;
     font-family: sans-serif;
     font-weight: 700;
@@ -474,20 +492,42 @@ section {
     letter-spacing: 0.05em;
     line-height: 1;
     padding: 0.8em 0.8em 0.78em;
-    transition: background 0.8s;
+    transition: background 0.4s;
+    margin: 10px;
 }
 
 .contact-button:hover {
     background: white;
-    color: #13386fe0;
+    color: #32a2c1;
     text-decoration: none;
+}
+
+#contact_mainbox {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #footer {
     display: flex;
     justify-content: space-between;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    padding: 0 20px 0 20px;
+
+}
+
+#footer div {
+    width: 25rem;
+}
+
+.footer_text {
+    display: flex;
+    justify-content: center;
+    align-content: end;
+    flex-direction: column;
 }
 
 .social-icons {
@@ -495,15 +535,11 @@ section {
     font-size: 1.7rem;
     text-decoration: none;
     color: white;
-}
-
-#tg {
-    padding-left: 47px;
+    transition: transform 0.1s ease-in-out;
 }
 
 .social-icons:hover {
-    transform: scale(1.5);
-    /*color: #929292;*/
+    transform: scale(2);
     text-decoration: none;
     background-image: linear-gradient(50deg, #3663d6 0%, #27c6b9 74%);
     background-size: 100%;
@@ -527,7 +563,7 @@ section {
 }
 
 .heading-icon {
-    background-image: linear-gradient(50deg, #3663d6 0%, #27a6c6 74%);
+    background-image: linear-gradient(to right , #38717f, #5aa6cc);
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
@@ -536,7 +572,8 @@ section {
 
 .section-heading-sp {
     /*color: #2857A4;*/
-    background-image: linear-gradient(50deg, #3663d6 0%, #27a6c6 74%);
+    background-image: linear-gradient(to right , #38717f, #5aa6cc);
+    /*background-image: linear-gradient(50deg, #3663d6 0%, #27a6c6 74%);*/
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
@@ -689,10 +726,10 @@ section {
     .timeline-divider {
         position: absolute;
         width: 0;
-        top: 2%;
+        top: 1%;
         left: 49.9%;
         border: 1px dashed rgb(0, 129, 215);
-        height: 96%;
+        height: 100%;
     }
 
     .timeline-designation {
@@ -784,6 +821,7 @@ section {
 
     .cert-comp {
         font-size: 1rem;
+        color: #ea5a20;
     }
 
     .cert-date {
