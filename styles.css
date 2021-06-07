@@ -485,7 +485,7 @@ section {
     border-width: 2px;
     border-color: white;
     border-style: solid;
-    box-shadow: 9px 8px 5px 0px rgba(27, 27, 27, 0.22);
+    box-shadow: 9px 8px 5px 0 rgba(27, 27, 27, 0.22);
     border-radius: 1rem;
     color: white;
     font-family: sans-serif;
@@ -494,14 +494,16 @@ section {
     letter-spacing: 0.05em;
     line-height: 1;
     padding: 0.8em 0.8em 0.78em;
-    transition: background 0.4s;
     margin: 10px;
+    transition: transform 0.1s ease, color ease-in, box-shadow 0.2s ease-out, background 0.4s;
 }
 
 .contact-button:hover {
     background: white;
     color: #32a2c1;
     text-decoration: none;
+    box-shadow: -16px 18px 20px 0 rgba(27, 27, 27, 0.22);
+    transform: scale(1.5);
 }
 
 #contact_mainbox {
