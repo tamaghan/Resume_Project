@@ -524,7 +524,7 @@ section {
 }
 
 #footer div {
-    width: 25rem;
+    width: 35rem;
 }
 
 .footer_text {
@@ -535,8 +535,8 @@ section {
 }
 
 .social-icons {
-    padding: 10px;
-    font-size: 1.7rem;
+    padding: 10px 20px 10px 20px;
+    font-size: 2rem;
     text-decoration: none;
     color: white;
     transition: transform 0.1s ease-in-out;
@@ -567,7 +567,7 @@ section {
 }
 
 .heading-icon {
-    background-image: linear-gradient(to right , #38717f, #5aa6cc);
+    background-image: linear-gradient(50deg, #3663d6 0%, #27c6b9 74%);
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
@@ -576,7 +576,7 @@ section {
 
 .section-heading-sp {
     /*color: #2857A4;*/
-    background-image: linear-gradient(to right , #38717f, #5aa6cc);
+    background-image: linear-gradient(50deg, #3663d6 0%, #27c6b9 74%);
     /*background-image: linear-gradient(50deg, #3663d6 0%, #27a6c6 74%);*/
     background-size: 100%;
     background-repeat: repeat;
