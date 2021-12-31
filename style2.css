@@ -490,10 +490,19 @@ header {
     justify-content: center;
     align-items: start;
 }
+.contact-socials{
+    padding: 0 5px;
+}
+.contact-socials a{
+    color: white;
+    font-size: 1.6em;
+    padding: 6.5px;
+}
 .handwriting{
     white-space: nowrap;
     font-family: 'Sassy Frass', cursive;
     font-size: 3em;
+    color: #F4F9F9;
 }
 .theme-line{
     height: 1rem;
@@ -523,9 +532,15 @@ header {
     }
 }
 @media screen and (max-width: 650px) {
+    .contact-container{
+        top: -15px;
+    }
+    .handwriting{
+        color: #212529;
+    }
     #Contact {
         padding: 0 40px!important;
-        background: linear-gradient(75deg, rgba(42, 115, 101, 0.68) 15%, rgba(0, 34, 68, 0) 60%) center center / cover no-repeat, #CBD7D4 url("images/man.svg") fixed no-repeat 55% 100%;
+        background: linear-gradient(110deg, rgba(42, 115, 101, 0.68) 13%, rgba(0, 34, 68, 0) 65%) center center / cover no-repeat, #CBD7D4 url("images/man.svg") fixed no-repeat 55% 100%;
     }
     .contact-heading{
         width: 100%;
