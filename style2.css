@@ -9,6 +9,7 @@
 /*    !*font-family: "Helvetica";*!*/
 /*}*/
 /*https://colorhunt.co/palette/97bfb4f5eedcdd4a484f091d*/
+/* <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> */
 /*html {*/
 /*    margin: 0;*/
 /*    padding: 0;*/
@@ -19,10 +20,16 @@
 /*}*/
 .pallet {
     color: #F4F9F9;
-    color: #97BFB4;
-    color: #DD4A48;
+
+
     color: #4F091D;
     color: #212529;
+}
+.txt-blue{
+    color: #97BFB4;
+}
+.txt-red{
+    color: #DD4A48;
 }
 
 .secondary {
@@ -31,7 +38,7 @@
 
 ::selection {
     /*color: red;*/
-    background: #97BFB4;
+    background: #97bfb46e;
 }
 
 a {
@@ -39,11 +46,11 @@ a {
 }
 
 section {
-    margin: 0 8rem;
+    padding: 0 8rem;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
     section {
-        margin: 0;
+        padding: 0;
     }
 }
 /**--NAV--*****************************************************************************************************************************/
@@ -109,7 +116,7 @@ nav {
     bottom: 7rem;
     left: 2.9rem;
     width: fit-content;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     color: #212529;
 }
 
@@ -123,6 +130,25 @@ nav {
     border-left: 1px solid #212529;
 }
 
+.side-socials-contact {
+    position: fixed;
+    bottom: 7rem;
+    left: 2.4rem;
+    width: fit-content;
+    font-size: 1.6rem;
+}
+
+.side-socials-contact:after {
+    content: "";
+    position: absolute;
+    bottom: -130px;
+    left: 50%;
+    right: 0;
+    height: 4em;
+    border-left: 1px solid whitesmoke;
+}
+
+
 .social-icons {
     padding: 10px 0;
     color: #212529;
@@ -131,13 +157,33 @@ nav {
 }
 
 .social-icons:hover {
+    color: #97BFB4;
+    text-decoration: none;
+}
+
+.social-icons-contact{
+    padding: 7px 0;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color ease-in, box-shadow 0.2s ease-out, background 0.4s;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 1.1em;
+    margin: 3px 0;
+    border-radius: 10px;
+}
+
+.social-icons-contact:hover{
+    background-color: white;
     color: #DD4A48;
     text-decoration: none;
+    box-shadow: -16px 18px 20px 0 rgba(27, 27, 27, 0.22);
+
 }
 
 .side-email {
     position: fixed;
-    right: 2.9rem;
+    right: 2.5rem;
     bottom: 7rem;
     width: fit-content;
     writing-mode: vertical-rl;
@@ -160,12 +206,25 @@ nav {
     padding: 8px 0;
     color: #212529;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     transition: color 0.2s ease-in;
 }
 .side-email a:hover {
-    color: #DD4A48;
+    color: #97BFB4;
+}
+@media screen and (max-width: 767px) {
+    .side-socials {
+        display: none!important;
+    }
+    .side-socials:after {
+        display: none!important;
+    }
+}
+@media screen and (max-width: 650px) {
+    .side-socials-contact {
+        display: none!important;
+    }
 }
 /**--HEADER--*****************************************************************************************************************************/
 header {
@@ -197,8 +256,8 @@ header {
 .fa-chevron-down:before {
     content: "\f078";
     position: relative;
-    top: 14px;
-    left: 15px;
+    top: 15px;
+    left: 15.5px;
 }
 
 .arrow {
@@ -207,7 +266,7 @@ header {
     width: 100%;
 }
 .arrow a:hover {
-    color: #F4F9F9;
+    color: rgba(244, 249, 249, 0.99);
     background-color: #97BFB4;
     border-color: transparent;
 }
@@ -259,23 +318,34 @@ header {
     justify-content: space-between;
     margin: 0 10rem;
     top: 13rem;
-    /*border: 1px solid #0f2027;*/
+    /* border: 1px solid #0f2027; */
 }
 
-.about{
-    margin-top: 45rem;
+.about h1{
+    height: 3rem;
 }
-
 .logo_container {
     width: 100%;
     height: 100%;
-    margin-top: 41rem;
+    padding: 3rem;
+}
+.about_logo path {
+    transition: fill 0.5s;
+    -webkit-transition: fill 0.5s;
+    animation: logo 6s infinite;
+}
+@keyframes logo {
+  0% {fill: #212529;}
+  50% {fill: #464646;}
+  100% {fill: #212529;}
+}
+.about{
+    padding: 3rem 2rem;
 }
 .about_content > div {
     width: 50%;
-    padding: 3rem;
+    margin-top: 45rem;
 }
-
 .about_content_mobile {
     position: fixed;
     padding: 3rem 8rem 1rem 8rem;
@@ -312,6 +382,11 @@ header {
     padding-bottom: 15px;
     border-bottom: 2px solid #DD4A48;
 }
+@media screen and (max-width: 1083px) {
+    .about h1{
+        height: 6rem;
+    }
+}
 @media screen and (max-width: 575px) {
     .about_img_container img {
         height: 50vw;
@@ -321,7 +396,10 @@ header {
     }
 }
 /**--EDUCATION--*****************************************************************************************************************************/
-
+#Education{
+    background-color: #ffffff;
+    height: 50rem;
+}
 /**--SKILLS--*****************************************************************************************************************************/
 
 /**--EXPERIENCE--*****************************************************************************************************************************/
@@ -332,7 +410,128 @@ header {
 
 /**--CONTACT--*****************************************************************************************************************************/
 #Contact {
-    background-color: #97BFB4;
-    height: 200rem;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background: linear-gradient(45deg, rgba(42, 115, 101, 0.68) 15%, rgba(0, 34, 68, 0) 60%) center center / cover no-repeat, #CBD7D4 url("images/man.svg") fixed no-repeat bottom right;
+    /*height: 45rem;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact-heading{
+    font-size: 10rem;
+    font-weight: bolder;
+    color: #d6e3df;
+    position: relative;
+    width: fit-content;
+    top: -96px;
+    left: -52px;
+    background: linear-gradient(
+            0deg, #f1f5f5 50%, #cbd7d4 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact-container{
+    position: relative;
+    top: -45px;
+}
+.contact-content{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    color: white;
+}
+.contact-btn{
+    background: transparent;
+    font-size: 0.95rem;
+    border-width: 2px;
+    border-color: #F4F9F9;
+    border-style: solid;
+    border-radius: 1rem;
+    color: #F4F9F9;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    margin-right:10px;
+    transition: color ease-in, box-shadow 0.2s ease-out, background 0.4s;
+}
+.contact-btn:hover{
+    background: #F4F9F9;
+    color: #DD4A48;
+    text-decoration: none;
+    box-shadow: -16px 18px 20px 0 rgba(27, 27, 27, 0.22);
+}
+.contact-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.fa-envelope{
+    transform: rotate(-90deg);
+    font-size: 2.5em;
+}
+.contact-icon{
+    font-size: 2.5em;
+}
+.phone-container{
+    padding: 0 20px;
+    border-left: 2px Solid white;
+    border-right: 2px Solid white;
+}
+.footer{
+    padding: 1rem 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.handwriting{
+    white-space: nowrap;
+    font-family: 'Sassy Frass', cursive;
+    font-size: 3em;
+}
+.theme-line{
+    height: 1rem;
+    width: 100%;
+    background: linear-gradient(-90deg, #97BFB4 0 25%, #DD4A48 25% 50%, #F4F9F9 50% 75%, #212529 75% 100%);
+}
+@media screen and (max-width: 1200px) {
+    #Contact {
+        padding: 0 8rem!important;
+        background: linear-gradient(45deg, rgba(42, 115, 101, 0.68) 15%, rgba(0, 34, 68, 0) 60%) center center / cover no-repeat, #CBD7D4 url("images/man.svg") fixed no-repeat 45% 100%;
+    }
+    .phone-container{
+        padding: 0;
+        padding-left: 5px;
+        border-left: none;
+        border-right: none;
+    }
+    .loc_pin{
+        padding-left: 5px;
+    }
+    .contact-container{
+        top: -35px;
+    }
+    .contact-heading{
+        font-size: 7rem;
+        top: -67px;
+    }
+}
+@media screen and (max-width: 650px) {
+    #Contact {
+        padding: 0 40px!important;
+        background: linear-gradient(75deg, rgba(42, 115, 101, 0.68) 15%, rgba(0, 34, 68, 0) 60%) center center / cover no-repeat, #CBD7D4 url("images/man.svg") fixed no-repeat 55% 100%;
+    }
+    .contact-heading{
+        width: 100%;
+        font-size: 4rem;
+        top: -38.5px;
+        left: 0;
+    }
 }
 
