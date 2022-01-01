@@ -10,14 +10,14 @@
 /*}*/
 /*https://colorhunt.co/palette/97bfb4f5eedcdd4a484f091d*/
 /* <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> */
-/*html {*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    height: 100%;*/
-/*    width: 100%;*/
-/*    -webkit-overflow-scrolling: touch;*/
-/*    scroll-behavior: smooth;*/
-/*}*/
+html {
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
 .pallet {
     color: #F4F9F9;
 
@@ -232,6 +232,30 @@ header {
     height: 110rem;
 }
 
+.arw-btn{
+    border-radius: 50%;
+    border: 2px solid #212529;
+    width: 4rem;
+    height: 4rem;
+    color: #212529;
+    transition: all 0.1s ease-in;
+    background: transparent;
+    font-size: 0.95rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    padding: 1rem;
+    /*transition: color ease-in, box-shadow 0.2s ease-out, background 0.4s;*/
+}
+.arw-btn:hover{
+    color: rgba(244, 249, 249, 0.99);
+    background-color: #97BFB4;
+    border-color: transparent;
+    box-shadow: -16px 18px 20px 0 rgba(27, 27, 27, 0.22);
+}
+
 .header_content {
     position: fixed;
     left: 8rem;
@@ -255,29 +279,12 @@ header {
 
 .fa-chevron-down:before {
     content: "\f078";
-    position: relative;
-    top: 15px;
-    left: 15.5px;
 }
 
 .arrow {
     position: absolute;
     bottom: 0;
     width: 100%;
-}
-.arrow a:hover {
-    color: rgba(244, 249, 249, 0.99);
-    background-color: #97BFB4;
-    border-color: transparent;
-}
-
-.arrow a {
-    border-radius: 50%;
-    border: 2px solid #212529;
-    width: 4rem;
-    height: 4rem;
-    color: #212529;
-    transition: all 0.1s ease-in;
 }
 
 #maurya {
@@ -317,7 +324,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     margin: 0 10rem;
-    top: 13rem;
+    top: 55rem;
     /* border: 1px solid #0f2027; */
 }
 
@@ -344,7 +351,7 @@ header {
 }
 .about_content > div {
     width: 50%;
-    margin-top: 45rem;
+    /*margin-top: 45rem;*/
 }
 .about_content_mobile {
     position: fixed;
@@ -414,7 +421,7 @@ header {
     background-position-y: center;
     background-size: cover;
     background: linear-gradient(45deg, rgba(42, 115, 101, 0.68) 15%, rgba(0, 34, 68, 0) 60%) center center / cover no-repeat, #CBD7D4 url("images/man.svg") fixed no-repeat bottom right;
-    /*height: 45rem;*/
+    min-height: 35rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -433,6 +440,9 @@ header {
     -webkit-text-fill-color: transparent;
 }
 .contact-container{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-between;*/
     position: relative;
     top: -45px;
 }
@@ -456,7 +466,7 @@ header {
     letter-spacing: 0.05em;
     line-height: 1;
     padding: 0.8em 0.8em 0.78em;
-    margin-right:10px;
+    /*margin-right:10px;*/
     transition: color ease-in, box-shadow 0.2s ease-out, background 0.4s;
 }
 .contact-btn:hover{
