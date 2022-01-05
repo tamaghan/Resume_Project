@@ -779,9 +779,9 @@ header {
 
     .edu-box {
         margin: 90px 0;
-        border: 1px solid transparent;
-        border-image: linear-gradient(127deg, rgba(221, 74, 72, 0.38), rgba(33, 37, 41, 0));
-        border-image-slice: 1;
+        border: 1px solid rgba(122, 122, 122, 0.17);
+        /*border-image: linear-gradient(127deg, rgba(221, 74, 72, 0.38), rgba(33, 37, 41, 0));*/
+        /*border-image-slice: 1;*/
         padding: 30px 10px 10px 15vw;
     }
 
@@ -793,6 +793,7 @@ header {
     }
 
     .edu-box-logo-container:after {
+        border: 2px solid rgba(122, 122, 122, 0.17);
         width: 16vw !important;
         height: 16vw !important;
         left: revert;
