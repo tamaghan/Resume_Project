@@ -125,3 +125,11 @@ const Messenger = function (el) {
 console.clear();
 let messenger = new Messenger($('.about_name'));
 
+function black(){
+    document.documentElement.style
+        .setProperty('--bg', '#212529');
+    document.documentElement.style
+        .setProperty('--white', '#212529');
+    document.documentElement.style
+        .setProperty('--black', '#F4F9F9');
+}
