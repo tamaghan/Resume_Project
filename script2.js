@@ -112,11 +112,9 @@ const Messenger = function (el) {
         if (m.message >= m.messages.length) {
             m.message = 0;
         }
-
         m.current_length = 0;
         m.fadeBuffer = false;
         // $(el).html('');
-
         setTimeout(m.animateIn, 200);
     };
 
@@ -133,3 +131,49 @@ function black(){
     document.documentElement.style
         .setProperty('--black', '#F4F9F9');
 }
+
+const playerContainers = document.querySelectorAll(".contact-box");
+playerContainers.forEach(container => {
+  container.addEventListener("mouseover", () => {
+    const player = container.querySelector("lottie-player");
+    player.setDirection(1);
+    player.play();
+  });
+  container.addEventListener("mouseleave", () => {
+    const player = container.querySelector("lottie-player");
+    player.setDirection(-1);
+    player.play();
+  });
+});
+
+const social_icons = document.querySelectorAll(".social-icons");
+social_icons.forEach(container => {
+    window.addEventListener('load', function() {
+        const player = container.querySelector("lottie-player");
+        player.setDirection(1);
+        player.play();
+        setTimeout(() => {
+            player.setDirection(-1);
+            player.play();
+        }, 2000);
+    }, false);
+  container.addEventListener("mouseover", () => {
+    const player = container.querySelector("lottie-player");
+    player.setDirection(1);
+    player.play();
+  });
+  container.addEventListener("mouseleave", () => {
+    const player = container.querySelector("lottie-player");
+    player.setDirection(-1);
+    player.play();
+  });
+});
+
+window.addEventListener('load', function() {
+    const icon = document.getElementById("activity");
+    icon.seek("100%");
+    icon.style.opacity = 1;
+    icon.setDirection(-1);
+    icon.play();
+}, false);
+  

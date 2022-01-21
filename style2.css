@@ -133,6 +133,7 @@ body {
 html {
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
+    /* visibility:hidden; */
 }
 
 @font-face {
@@ -142,6 +143,10 @@ html {
 @font-face {
     font-family: bs;
     src: url('Fonts/Brown Sugar .otf');
+}
+@font-face {
+    font-family: bigilla;
+    src: url('Fonts/Bigilla-Bold.otf');
 }
 
 :root {
@@ -368,16 +373,20 @@ nav {
 
 .social-icons {
     border-radius: 1rem;
-    padding: 10px;
+    padding: 5px;
+    margin: 2px 0;
     color: var(--black);
     text-decoration: none;
     transition: color 0.2s ease-in, box-shadow 0.2s ease-in-out;
 }
 
+.social-icons lottie-player{
+    width: 1.5em;
+}
+
 .social-icons:hover {
-    background: white;
+    background: var(--white);
     box-shadow: -16px 18px 20px 0 rgba(27, 27, 27, 0.22);
-    color: var(--blue);
     text-decoration: none;
 }
 
@@ -437,6 +446,16 @@ nav {
     background-color: white;
     text-decoration: none;
     box-shadow: -16px 18px 20px 0 rgba(27, 27, 27, 0.22);
+}
+
+#activity{
+    opacity: 0;
+    width: 1.6em;
+    font-weight: 100;
+}
+
+#activity_container{
+    animation-duration: 3s;
 }
 
 /* X-Small devices (portrait phones, less than 576px)*/
@@ -516,71 +535,25 @@ header {
 }
 
 
-.wrapper {
-    max-width: 100%;
-    overflow: hidden;
-}
 
-.marquee {
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-}
-.ll{
-    animation: left 40s linear infinite;
-}
-.rr{
-    animation: right 40s linear infinite;
-
-}
-
-.marquee p {
-    display: inline-block;
-}
-
-@keyframes left {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-    100% {
-        transform: translate3d(-50%, 0, 0);
-    }
-}
-@keyframes right {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-    100% {
-        transform: translate3d(50%, 0, 0);
-    }
-}
-/*.header_content {*/
-/*    position: fixed;*/
-/*    left: 8rem;*/
-/*    bottom: 13%;*/
-/*    height: 70%;*/
-/*}*/
 .header_content {
-    position: fixed;
-    left: 0;
-    /*bottom: 13%;*/
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    padding: 4rem 0;
-    /*background-color: yellow;*/
+   position: fixed;
+   left: 8rem;
+   bottom: 13%;
+    height: 70%;
 }
 
 
 .title {
-    background-color: var(--bg);
     position: relative;
     z-index: 100;
-    font-size: 7rem;
+    /* font-size: 7rem; */
+    font-size: 8vw;
     font-weight: 100;
-    font-family: bs;
-    /*font-family: 'PT Sans', sans-serif;*/
-    /*font-family: 'Roboto Condensed', sans-serif;*/
+    font-family: bigilla;
+}
+.title div{
+    margin: 0 7px;
 }
 
 .link {
@@ -678,21 +651,21 @@ header {
     box-shadow: -25px -25px 50px 0 white
 }
 
-/*.logo_container:before {*/
-/*    font-family: 'Roboto Mono', monospace;*/
-/*    content: 'INTRODUCTION';*/
-/*    writing-mode: vertical-rl;*/
-/*    text-orientation: upright;*/
-/*    position: absolute;*/
-/*    left: -7px;*/
-/*    top: 50px;*/
-/*    letter-spacing: 4px;*/
-/*    font-size: 13px;*/
-/*    height: 20px;*/
-/*    color: var(--black);*/
-/*    width: 20px;*/
-/*    line-height: 20px;*/
-/*}*/
+/* .logo_container:before {
+   font-family: 'Roboto Mono', monospace;
+   content: 'INTRODUCTION';
+   writing-mode: vertical-rl;
+   text-orientation: upright;
+   position: absolute;
+   left: -7px;
+   top: 50px;
+   letter-spacing: 4px;
+   font-size: 13px;
+   height: 20px;
+   color: var(--black);
+   width: 20px;
+   line-height: 20px;
+} */
 /*.logo_container:after {*/
 /*    content: '';*/
 /*    position: absolute;*/
@@ -780,7 +753,7 @@ header {
 /* X-Small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
     .about_img_container img {
-        height: 50vw;
+        height: 42vw;
     }
 
     .about_content_mobile {
@@ -1082,6 +1055,35 @@ header {
     animation: grow 1s ease-in-out;
 }
 
+.skill-content{
+    background-color: #2c50ae;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.skill-container{
+    background-color: #2cae62;
+    display: flex;
+}
+
+.container-heading{
+    background-color: #ae762c;
+    font-family: 'Roboto Mono', monospace;
+   /* content: 'INTRODUCTION'; */
+   writing-mode: vertical-rl;
+   text-orientation: upright;
+   letter-spacing: 4px;
+   font-size: 13px;
+   color: var(--black);
+   width: 20px;
+   line-height: 20px;
+}
+
+.skill-logos{
+    background-color: #ae2c7c;
+}
+
 /* X-Small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 
@@ -1273,7 +1275,7 @@ header {
     background-position-y: center;
     background-size: cover;
     background: linear-gradient(45deg, rgba(42, 115, 101, 0.68) 15%, rgba(0, 34, 68, 0) 60%) center center / cover no-repeat, #CBD7D4 url("images_2/man.svg") fixed no-repeat bottom right;
-    min-height: 35rem;
+    min-height: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1324,7 +1326,7 @@ header {
 }
 
 .contact-btn:hover {
-    background: #F4F9F9;
+    background: var(--white);
     color: var(--red);
     text-decoration: none;
     box-shadow: -16px 18px 20px 0 rgba(27, 27, 27, 0.22);
@@ -1346,7 +1348,27 @@ header {
 }
 
 .contact-icon {
-    font-size: 2.5em;
+    width: 3.5em;
+    height: auto;
+}
+
+#phone{
+    transform: scale(2);
+    width: 2em;
+    position: relative;
+    left: 7px;
+}
+
+#loc{
+    transform: scale(1.7);
+    position: relative;
+    top: 7px;
+    left: 7px;
+    width: 2em;
+}
+
+#heart{
+    width: 50px;
 }
 
 .phone-container {
@@ -1379,6 +1401,8 @@ header {
     font-family: 'Sassy Frass', cursive;
     font-size: 3em;
     color: #F4F9F9;
+    position: relative;
+    top: -7px;
 }
 
 .theme-line {
