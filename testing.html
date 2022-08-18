@@ -1,182 +1,377 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
     <title>SVG</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&family=IBM+Plex+Serif:wght@400;500&family=Libre+Barcode+39+Text&family=Playfair+Display:wght@700&family=Roboto+Mono&family=Sassy+Frass&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&family=IBM+Plex+Serif:wght@400;500&family=Libre+Barcode+39+Text&family=Playfair+Display:wght@700&family=Roboto+Mono&family=Sassy+Frass&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        @media (max-width: 575.98px) {
+      @media (max-width: 575.98px) {
+      }
 
+      /*Small devices (landscape phones, less than 768px)*/
+      @media (max-width: 767.98px) {
+      }
+
+      /*Medium devices (tablets, less than 992px)*/
+      @media (max-width: 991.98px) {
+      }
+
+      /*Large devices (desktops, less than 1200px)*/
+      @media (max-width: 1199.98px) {
+      }
+
+      /*X-Large devices (large desktops, less than 1400px)*/
+      @media (max-width: 1399.98px) {
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        /*filter: blur(10px);*/
+        /*filter: blur(100px);*/
+        background: black;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+      }
+
+      .shape-blob {
+        background: #101010;
+        height: 200px;
+        width: 200px;
+        border-radius: 30% 50% 20% 40%;
+        animation: transform 20s ease-in-out infinite both alternate,
+          movement_one 40s ease-in-out infinite both;
+        opacity: 0.7;
+        position: absolute;
+        left: 70%;
+        top: 50%;
+      }
+
+      .shape-blob.one {
+        height: 500px;
+        width: 500px;
+        left: -200px;
+        top: -150px;
+        transform: rotate(-180deg);
+        animation: transform 30s ease-in-out infinite both alternate,
+          movement_two 60s ease-in-out infinite both;
+      }
+
+      .shape-blob.two {
+        height: 350px;
+        width: 350px;
+        left: 500px;
+        top: -150px;
+        transform: rotate(-180deg);
+        animation: transform 30s ease-in-out infinite both alternate,
+          movement_two 60s ease-in-out infinite both;
+      }
+
+      @keyframes transform {
+        0%,
+        100% {
+          border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
         }
-
-        /*Small devices (landscape phones, less than 768px)*/
-        @media (max-width: 767.98px) {
-
+        20% {
+          border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
         }
-
-        /*Medium devices (tablets, less than 992px)*/
-        @media (max-width: 991.98px) {
-
+        40% {
+          border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%;
         }
-
-        /*Large devices (desktops, less than 1200px)*/
-        @media (max-width: 1199.98px) {
-
+        60% {
+          border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%;
         }
-
-        /*X-Large devices (large desktops, less than 1400px)*/
-        @media (max-width: 1399.98px) {
-
+        80% {
+          border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%;
         }
+      }
 
-        body {
-            margin: 0;
-            padding: 0;
+      @keyframes movement_one {
+        0%,
+        100% {
+          transform: none;
         }
+        50% {
+          transform: translate(50%, 20%) rotateY(10deg) scale(1.2);
+        }
+      }
 
-        .container {
-            /*filter: blur(10px);*/
-            /*filter: blur(100px);*/
-            background: black;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            position: absolute;
-            z-index: -1;
+      @keyframes movement_two {
+        0%,
+        500% {
+          transform: none;
         }
+        50% {
+          transform: translate(50%, 20%) rotate(-200deg) scale(1.2);
+        }
+      }
 
-        .shape-blob {
-            background: #101010;
-            height: 200px;
-            width: 200px;
-            border-radius: 30% 50% 20% 40%;
-            animation: transform 20s ease-in-out infinite both alternate,
-            movement_one 40s ease-in-out infinite both;
-            opacity: .7;
-            position: absolute;
-            left: 70%;
-            top: 50%;
-        }
-
-        .shape-blob.one {
-            height: 500px;
-            width: 500px;
-            left: -200px;
-            top: -150px;
-            transform: rotate(-180deg);
-            animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
-        }
-
-        .shape-blob.two {
-            height: 350px;
-            width: 350px;
-            left: 500px;
-            top: -150px;
-            transform: rotate(-180deg);
-            animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
-        }
-
-        @keyframes transform {
-            0%,
-            100% {
-                border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
-            }
-            20% {
-                border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
-            }
-            40% {
-                border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%;
-            }
-            60% {
-                border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%;
-            }
-            80% {
-                border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%;
-            }
-        }
-
-        @keyframes movement_one {
-            0%,
-            100% {
-                transform: none;
-            }
-            50% {
-                transform: translate(50%, 20%) rotateY(10deg) scale(1.2);
-            }
-        }
-
-        @keyframes movement_two {
-            0%,
-            500% {
-                transform: none;
-            }
-            50% {
-                transform: translate(50%, 20%) rotate(-200deg) scale(1.2);
-            }
-        }
-
-        h1 {
-            font-family: "Helvetica Neue";
-            font-size: 7em;
-            letter-spacing: 5px;
-            font-weight: 100;
-            line-height: .9em;
-            position: relative;
-            z-index: 4;
-            text-shadow: 2px 3px 15px rgba(0, 0, 0, .15);
-            background: linear-gradient(110deg, #5e462c, #ffd989, #feffc6,#ffd989, #5e462c);
-            -webkit-text-fill-color: rgba(0, 0, 0, 0);
-            -webkit-background-clip: text;
-        }
-        #parent_div {
-            position: relative;
-            height: 100%;
-            width: 100%;
-        }
-        #textarea{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-        }
-
+      h1 {
+        font-family: "Helvetica Neue";
+        font-size: 7em;
+        letter-spacing: 5px;
+        font-weight: 100;
+        line-height: 0.9em;
+        position: relative;
+        z-index: 4;
+        text-shadow: 2px 3px 15px rgba(0, 0, 0, 0.15);
+        background: linear-gradient(
+          110deg,
+          #5e462c,
+          #ffd989,
+          #feffc6,
+          #ffd989,
+          #5e462c
+        );
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        -webkit-background-clip: text;
+      }
+      #parent_div {
+        position: relative;
+        height: 100%;
+        width: 100%;
+      }
+      #textarea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
     </style>
+  </head>
 
-</head>
+  <body>
+    <section id="get-in-touch">
+      <div
+        class="hands_container"
+        data-anchor-target="#get-in-touch"
+        data-100-top="transform: scale(2);"
+        data-600-top="transform: scale(1.8);opacity: 0.7;"
+        data-400-bottom="transform: scale(1);opacity: 1;"
+      >
+        <svg
+          class="hands"
+          width="590"
+          height="207"
+          viewBox="0 0 590 207"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            style="stroke-dasharray: 1000"
+            data-anchor-target="#get-in-touch"
+            data-500-top="stroke-dashoffset:1000;"
+            data-bottom="stroke-dashoffset:0;"
+            d="M34.6136 169.193C37.3947 166.594 44.3053 156.817 55.6404 139.193C82.8186 101.42 92.6669 93.2579 102.614
+                   95.1929C102.425 91.0195 91.6136 86.193 87.6136 84.5916C83.6136 82.9902 70.3847 77.6699 54.1136
+                   76.693C82.2516 74.0487 93.5825 76.7702 102.614 92.193C114.458 106.328 120.714 113.162 128.114
+                   114.693H138.614C141.065 113.675 138.675 112.138 133.614 109.193C124.174 103.357 122.697 100.878 123.614
+                   97.1931C123.984 94.3884 126.652 99.334 131.614 108.693C137.986 115.495 142.62 117.226 152.114
+                   117.193C156.402 117.152 160.296 118.941 168.114 123.193C173.454 127.599 176.03 129.354 178.114
+                   128.193C181.227 126.828 181.354 125.519 180.114 122.693C177.601 124.088 177.639 125.516 179.114
+                   128.693C182.602 131.523 184.569 132.505 188.114 132.193C192.135 130.404 194.233 126.193 200.114
+                   126.193C205.994 126.193 205.994 132.193 205.994 132.193C205.994 132.193 206.88 136.604 203.614
+                   137.693C200.987 138.677 192.114 131.193 191.114 128.693C190.114 126.193 190.614 123.193 190.614
+                   123.193C193.5 118.268 195.722 116.912 200.614 116.693C208.357 120.456 210.385 124.103 211.614
+                   132.193V136.193C211.163 138.389 210.272 139.313 208.114 140.693H203.614C196.415 138.869 192.889 136.734
+                   187.614 130.693C186.458 127.912 186.286 125.798 187.114 120.693C187.114 120.693 187.614 116.693 187.114
+                   115.193C186.614 113.693 178.114 106.193 177.114 104.193C174.366 103.177 173.081 102.388 171.114
+                   100.693C143.319 72.2313 130.848 70.9733 112.614 87.6931C135.281 73.8382 150.614 81.1931 153.614
+                   82.6931C156.614 84.1931 170.17 82.8109 180.114 81.1931C183.424 83.8795 185.287 84.1475 188.614
+                   84.1931C188.539 88.0358 191.021 91.904 204.114 104.693C209.095 108.293 211.603 110.52 215.114
+                   115.193C215.633 118.863 221.81 124.84 237.614 138.693C241.422 141.459 244.406 142.903 247.114
+                   142.705C251.397 142.749 253.834 141.31 254.912 137.693C252.71 132.403 252.114 128.193 252.114
+                   126.193C252.114 124.193 240.386 96.6228 234.114 90.1931C230.604 87.7555 229.236 86.6847 227.614 85.1931"
+            stroke="url(#paint0_linear_121_50)"
+          />
+          <path
+            style="stroke-dasharray: 1000"
+            data-anchor-target="#get-in-touch"
+            data-800-top="stroke-dashoffset:1000;"
+            data-end="stroke-dashoffset:0;"
+            d="M181.114 82.1931C181.614 85.6931 180.192 87.2874 180.06 89.1931C179.923 91.1817 180.013 92.775 180.291 94.1931C179.68 99.28 178.827 101.428 177.614 104.193C181.085 106.502 183.317 107.805 189.399 110.193C192.511 110.412 197.682 112.693 198.648 113.693C199.614 114.693 202.74 117.543 205.114 118.193L205.614 119.193C206.229 113.246 202.614 105.193 204.114 104.693C205.614 104.193 222.487 114.068 225.614 128.193C226.888 128.586 228.612 134.193 229.113 136.193C229.614 138.193 232.532 140.213 235.114 141.193C239.019 141.947 237.031 136.76 235.114 129.693C233.218 125.851 230.053 123.987 229.113 121.693C228.857 121.07 228.565 119.999 228.173 118.693C228.34 117.007 228.035 115.06 227.219 113.193C224.298 111.391 222.659 109.103 221.614 107.193C220.006 102.341 218.757 99.1497 216.614 97.0396C216.015 96.1945 214.92 95.5285 213.114 94.9307C211.267 94.3196 209.114 95.1931 205.114 93.1931C199.323 88.3561 196.632 86.2929 193.614 84.6931"
+            stroke="url(#paint1_linear_121_50)"
+          />
+          <path
+            style="stroke-dasharray: 1000"
+            data-anchor-target="#get-in-touch"
+            data-700-top="stroke-dashoffset:1000;"
+            data-bottom="stroke-dashoffset:0;"
+            d="M186.614 132.193C183.57 134.462 182.226 136.504 182.264 138.693C182.419 144.27 185.114 149.693 189.614 149.693C194.114 149.693 196.653 147.49 199.614 139.693"
+            stroke="url(#paint2_linear_121_50)"
+          />
+          <path
+            style="stroke-dasharray: 1000"
+            data-anchor-target="#get-in-touch"
+            data-500-top="stroke-dashoffset:1000;"
+            data-bottom="stroke-dashoffset:0;"
+            d="M190.614 52.7194C186.386 45.9292 180.659 42.9823 175.614 41.6932C170.568 40.404 93.1135 38.6932 86.1135 39.6932C79.1135 40.6932 71.0631 46.8541 51.6135 59.1932C22.0749 77.5336 2.61353 88.6932 1.11353 87.6932C-0.386469 86.6932 12.7232 77.9937 55.6135 57.6932C55.6135 57.6932 79.908 46.7518 82.6136 46.6932C85.3191 46.6347 121.049 42.7327 127.614 44.6932C134.178 46.6537 145.396 50.7636 159.575 51.6932C167.521 52.9314 183.801 52.8077 190.114 52.7261M190.114 52.7261C191.458 52.7087 192.35 52.6932 192.614 52.6932C194.114 52.6932 220.512 61.1366 235.114 63.6932C239.253 66.5332 235.114 75.1932 233.614 75.1932C232.114 75.1932 227.619 63.7639 236.114 63.6932C239.147 64.7952 242.148 68.8945 248.614 79.1932C251.726 82.8128 255.441 85.6932 257.614 86.1932C259.786 86.6932 263.696 92.0818 262.114 95.6932C260.608 98.0572 254.97 96.6085 242.614 92.6932C232.275 89.7366 227.346 84.6947 227.114 85.1932C226.881 85.6917 206.318 90.4075 199.614 84.1932C183.679 86.1167 176.152 79.6338 175.473 69.6932C175.9 62.7746 181.48 56.4099 190.114 52.7261Z"
+            stroke="url(#paint3_linear_121_50)"
+          />
+          <path
+            style="stroke-dasharray: 1000"
+            data-anchor-target="#get-in-touch"
+            data-800-top="stroke-dashoffset:1000;"
+            data-end="stroke-dashoffset:0;"
+            d="M241.614 92.1931C246.09 96.2257 249.114 101.115 253.114 105.404C257.114 109.693 263.114 114.193 267.114 113.693C271.114 113.193 274.445 111.925 274.114 104.693C271.087 99.3109 268.966 97.0319 263.614 95.6931M263.114 95.6931C262.614 97.1931 269.307 103.248 274.614 106.193"
+            stroke="url(#paint4_linear_121_50)"
+          />
+          <path
+            style="stroke-dasharray: 400"
+            data-anchor-target="#get-in-touch"
+            data-500-top="stroke-dashoffset:400;"
+            data-500-end="stroke-dashoffset:0;"
+            d="M589.614 98.1931C569.53 94.2552 553.281 92.9525 523.614 96.2879C502.76 100.734 490.341 102.566 486.114 101.693M486.114 101.693C480.455 98.5218 476.114 76.1931 476.114 76.1931C476.114 76.1931 487.71 94.1252 486.114 101.693ZM486.114 101.693C483.531 110.494 467.114 124.193 462.114 127.038C457.114 129.882 446.556 137.978 438.114 141.193C437.605 140.846 437.106 140.512 436.617 140.193M398.614 149.693C408.555 141.26 409.032 139.29 409.114 136.193C419.891 132.875 426.164 133.371 436.617 140.193M398.614 149.693C398.902 162.545 397.535 165.262 394.614 168.693C396.259 180.51 393.819 184.025 386.114 187.193C383.073 187.301 381.606 186.385 381.114 183.829M398.614 149.693C401.251 152.047 400.114 168.693 400.114 172.193C400.114 175.693 404.558 177.197 409.114 176.693C414.973 175.405 418.685 168.481 418.796 158.193C418.616 154.878 415.942 152.689 410.114 151.193C417.679 152.975 422.121 149.323 430.114 141.193C432.669 140.993 434.091 140.755 436.617 140.193M381.114 183.829C380.831 182.363 380.869 180.356 381.114 177.693C381.114 177.693 381.114 175.693 381.114 171.693C381.114 167.693 377.388 153.93 381.114 140.193C385.475 136.811 389.422 132.649 394.614 126.334C397.367 121.545 400.604 117.367 404.614 113.693C409.867 110.597 412.97 110.282 418.614 110.693C421.403 110.236 423.018 109.361 426.114 105.193C426.992 106.606 427.946 107.722 429.114 108.119C431.375 108.341 433.352 108.342 435.114 108.051C441.91 106.146 446.493 103.993 449.614 101.095C464.547 86.3091 460.333 79.5282 457.114 63.1931C465.103 66.7867 468.45 70.1684 471.114 80.1931C471.491 83.9033 471.609 85.9827 471.114 89.6931C468.336 100.483 463.142 106.123 440.614 114.693C433.857 116.443 427.114 116.693 420.114 117.455C413.114 118.216 407.07 121.778 402.614 125.693C395.137 133.049 390.608 136.837 379.114 140.193C371.662 142.066 367.507 144.033 360.114 148.193C359.278 153.419 358.844 156.368 359.114 162.193C360.657 166.401 361.954 169.826 363.79 173.693C365.998 178.345 369.114 193.193 374.114 191.693C379.114 190.193 379.193 189.034 381.114 183.829Z"
+            stroke="url(#paint5_linear_121_50)"
+          />
+          <path
+            style="stroke-dasharray: 1000"
+            data-anchor-target="#get-in-touch"
+            data-500-top="stroke-dashoffset:1000;"
+            data-bottom="stroke-dashoffset:0;"
+            d="M378.114 140.693C373.62 145.588 369.906 148.31 365.614 147.951C361.315 147.591 351.114 144.193 349.614 136.693C349.571 133.74 349.397 132.141 358.614 125.693C367.927 123.799 371.532 124.504 371.614 132.693C370.185 138.688 366.139 141.908 360.114 141.919C357.753 142.256 355.114 139.193 354.114 136.693C353.114 134.193 364.089 125.451 367.114 127.193C370.138 128.936 371.694 133.945 373.114 132.693C374.533 131.441 382.764 128.241 383.114 126.193C383.005 124.426 373.114 118.193 375.614 116.193C378.114 114.193 391.69 104.477 398.114 93.6932M398.114 93.6932C386.194 95.995 377.114 97.6932 375.614 93.6932C374.912 91.8227 374.18 90.6224 373.614 88.6408C372.969 86.3848 372.539 83.1162 372.614 76.6932C359.419 79.9822 346.114 83.6932 343.775 83.1932C341.437 82.6932 333.699 83.2695 329.114 84.6932C322.091 87.428 315.774 90.4102 302.114 97.1932C308.186 93.5838 313.419 90.5875 318.114 88.1327C323.114 83.1932 335.756 78.5465 349.614 78.6932C363.388 77.664 379.346 71.9323 402.614 56.9472C406.8 54.7295 410.626 52.4834 414.114 50.1789C417.062 48.7849 419.725 47.5082 422.114 46.3498C427.713 44.3087 431.663 43.2835 434.114 43.3224C441.305 41.2528 448.694 39.4777 456.614 37.9529C464.839 35.757 472.641 34.1191 480.614 32.9055C498.845 26.467 493.49 28.2166 506.114 23.6932M398.114 93.6932C402.071 88.3203 405.713 83.3011 409.31 78.6932C414.878 73.3715 422.247 65.6931 426.114 64.6931C429.98 63.6931 442.3 54.1719 452.614 48.6964C456.989 47.3957 461.793 46.2712 467.114 45.3256C484.229 44.4684 495.21 43.513 496.614 42.1931C482.301 41.0031 493.242 33.9858 506.114 23.6932M506.114 23.6932C527.226 14.4703 550.614 3.19319 549.614 1.19319C548.614 -0.806811 522.943 13.14 506.114 23.6932Z"
+            stroke="url(#paint6_linear_121_50)"
+          />
+          <path
+            style="stroke-dasharray: 1000"
+            data-anchor-target="#get-in-touch"
+            data-600-top="stroke-dashoffset:1000;"
+            data-bottom="stroke-dashoffset:0;"
+            d="M398.614 93.6931C395.316 101.347 391.981 106.95 388.238 111.193C384.723 112.582 383.614 114.693 379.176 114.693C374.739 114.693 370.342 118.004 367.614 119.308C363.734 121.26 360.861 123.256 358.614 125.693C369.884 116.567 377.139 110.599 382.114 107.193C374.877 108.096 369.497 108.424 366.114 106.024M366.114 106.024C365.586 105.65 365.106 105.209 364.676 104.693C362.322 101.873 353.114 93.6931 362.114 88.1931C360.332 94.4598 360.221 98.1584 366.114 106.024ZM366.114 106.024C354.167 107.234 348.142 106.708 339.114 102.693C334.875 106.914 331.832 108.998 318.114 109.193C310.012 114.481 298.98 118.715 289.114 112.57C287.868 111.43 287.756 109.375 289.114 106.024M289.114 106.024C289.235 102.813 302.114 95.1931 302.614 97.1931C303.114 99.1931 299.011 104.027 289.114 106.024Z"
+            stroke="url(#paint7_linear_121_50)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_121_50"
+              x1="144.763"
+              y1="75.8044"
+              x2="144.763"
+              y2="169.193"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#256654" />
+              <stop offset="1" stop-color="#97BFB4" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear_121_50"
+              x1="207.486"
+              y1="82.1931"
+              x2="207.486"
+              y2="141.266"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#256654" />
+              <stop offset="1" stop-color="#97BFB4" />
+            </linearGradient>
+            <linearGradient
+              id="paint2_linear_121_50"
+              x1="190.939"
+              y1="132.193"
+              x2="190.939"
+              y2="149.693"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#256654" />
+              <stop offset="1" stop-color="#97BFB4" />
+            </linearGradient>
+            <linearGradient
+              id="paint3_linear_121_50"
+              x1="131.74"
+              y1="39.3928"
+              x2="131.74"
+              y2="96.8363"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#256654" />
+              <stop offset="1" stop-color="#97BFB4" />
+            </linearGradient>
+            <linearGradient
+              id="paint4_linear_121_50"
+              x1="258.114"
+              y1="92.1931"
+              x2="258.114"
+              y2="113.731"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#256654" />
+              <stop offset="1" stop-color="#97BFB4" />
+            </linearGradient>
+            <linearGradient
+              id="paint5_linear_121_50"
+              x1="474.324"
+              y1="63.1931"
+              x2="474.324"
+              y2="191.799"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#256654" />
+              <stop offset="1" stop-color="#97BFB4" />
+            </linearGradient>
+            <linearGradient
+              id="paint6_linear_121_50"
+              x1="425.879"
+              y1="1"
+              x2="425.879"
+              y2="147.982"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#256654" />
+              <stop offset="1" stop-color="#97BFB4" />
+            </linearGradient>
+            <linearGradient
+              id="paint7_linear_121_50"
+              x1="343.375"
+              y1="88.1931"
+              x2="343.375"
+              y2="125.693"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#256654" />
+              <stop offset="1" stop-color="#97BFB4" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </section>
 
-<body >
-
-<div id="parent_div">
-    <div class="container ">
-<!--        <div class="shape-blob"></div>-->
-<!--        <div class="shape-blob one"></div>-->
-<!--        <div class="shape-blob two"></div>-->
+    <div id="parent_div">
+      <div class="container">
+        <!--        <div class="shape-blob"></div>-->
+        <!--        <div class="shape-blob one"></div>-->
+        <!--        <div class="shape-blob two"></div>-->
         <div>
-            <div></div>
+          <div></div>
         </div>
-    </div>
-    <div id="textarea">
+      </div>
+      <div id="textarea">
         <h1>Euphoria</h1>
         <div>
-            <a>Resume</a>
+          <a>Resume</a>
         </div>
+      </div>
     </div>
-</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-</script>
-<script type="text/javascript" src="js/skrollr.js"></script>
-<script type="text/javascript">
-    skrollr.init();
-</script>
-</body>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script></script>
+    <script type="text/javascript" src="js/skrollr.js"></script>
+    <script type="text/javascript">
+      skrollr.init();
+    </script>
+  </body>
 </html>
