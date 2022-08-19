@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&family=IBM+Plex+Serif:wght@400;500&family=Libre+Barcode+39+Text&family=Playfair+Display:wght@700&family=Roboto+Mono&family=Sassy+Frass&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="testing.css" />
     <style>
       @media (max-width: 575.98px) {
       }
@@ -29,134 +30,11 @@
       /*X-Large devices (large desktops, less than 1400px)*/
       @media (max-width: 1399.98px) {
       }
-
-      body {
-        margin: 0;
-        padding: 0;
-      }
-
-      .container {
-        /*filter: blur(10px);*/
-        /*filter: blur(100px);*/
-        background: black;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        position: absolute;
-        z-index: -1;
-      }
-
-      .shape-blob {
-        background: #101010;
-        height: 200px;
-        width: 200px;
-        border-radius: 30% 50% 20% 40%;
-        animation: transform 20s ease-in-out infinite both alternate,
-          movement_one 40s ease-in-out infinite both;
-        opacity: 0.7;
-        position: absolute;
-        left: 70%;
-        top: 50%;
-      }
-
-      .shape-blob.one {
-        height: 500px;
-        width: 500px;
-        left: -200px;
-        top: -150px;
-        transform: rotate(-180deg);
-        animation: transform 30s ease-in-out infinite both alternate,
-          movement_two 60s ease-in-out infinite both;
-      }
-
-      .shape-blob.two {
-        height: 350px;
-        width: 350px;
-        left: 500px;
-        top: -150px;
-        transform: rotate(-180deg);
-        animation: transform 30s ease-in-out infinite both alternate,
-          movement_two 60s ease-in-out infinite both;
-      }
-
-      @keyframes transform {
-        0%,
-        100% {
-          border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
-        }
-        20% {
-          border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
-        }
-        40% {
-          border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%;
-        }
-        60% {
-          border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%;
-        }
-        80% {
-          border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%;
-        }
-      }
-
-      @keyframes movement_one {
-        0%,
-        100% {
-          transform: none;
-        }
-        50% {
-          transform: translate(50%, 20%) rotateY(10deg) scale(1.2);
-        }
-      }
-
-      @keyframes movement_two {
-        0%,
-        500% {
-          transform: none;
-        }
-        50% {
-          transform: translate(50%, 20%) rotate(-200deg) scale(1.2);
-        }
-      }
-
-      h1 {
-        font-family: "Helvetica Neue";
-        font-size: 7em;
-        letter-spacing: 5px;
-        font-weight: 100;
-        line-height: 0.9em;
-        position: relative;
-        z-index: 4;
-        text-shadow: 2px 3px 15px rgba(0, 0, 0, 0.15);
-        background: linear-gradient(
-          110deg,
-          #5e462c,
-          #ffd989,
-          #feffc6,
-          #ffd989,
-          #5e462c
-        );
-        -webkit-text-fill-color: rgba(0, 0, 0, 0);
-        -webkit-background-clip: text;
-      }
-      #parent_div {
-        position: relative;
-        height: 100%;
-        width: 100%;
-      }
-      #textarea {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-      }
     </style>
   </head>
 
   <body>
+    <!--
     <section id="get-in-touch">
       <div
         class="hands_container"
@@ -349,22 +227,9 @@
         </svg>
       </div>
     </section>
-
+-->
     <div id="parent_div">
-      <div class="container">
-        <!--        <div class="shape-blob"></div>-->
-        <!--        <div class="shape-blob one"></div>-->
-        <!--        <div class="shape-blob two"></div>-->
-        <div>
-          <div></div>
-        </div>
-      </div>
-      <div id="textarea">
-        <h1>Euphoria</h1>
-        <div>
-          <a>Resume</a>
-        </div>
-      </div>
+      <p class="para">This is SASS in HTML</p>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
