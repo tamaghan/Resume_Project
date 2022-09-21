@@ -312,45 +312,49 @@
           </li>
         </ul>
       </div>
-      <nav class="navbar navbar-dark">
-        <button
-          class="navbar-toggler"
-          style="
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            padding: 0;
-            border: none;
-          "
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarToggleExternalContent"
-          aria-controls="navbarToggleExternalContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+      <nav class="navbar navbar-dark px-3 py-3">
+        <div>
+          <button
+            class="navbar-toggler"
+            style="
+              backdrop-filter: blur(10px);
+              -webkit-backdrop-filter: blur(10px);
+              padding: 0;
+              border: none;
+            "
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span>
+              <img
+                src="images/TM_logo.png"
+                style="width: 50px; height: 50px; margin-top: -4px"
+                id="phone-logo"
+                alt="TM"
+              />
+            </span>
+          </button>
+        </div>
+        <div>
           <span>
-            <img
-              src="images/TM_logo.png"
-              style="width: 50px; height: 50px; margin-top: -4px"
-              id="phone-logo"
-              alt="TM"
-            />
+            <i
+              id="dark-bulb"
+              onclick="go_dark()"
+              class="fas fa-lightbulb darkmode-full"
+            >
+            </i>
+            <i
+              id="light-bulb"
+              onclick="go_light()"
+              class="far fa-lightbulb darkmode"
+            >
+            </i>
           </span>
-        </button>
-        <span>
-          <i
-            id="dark-bulb"
-            onclick="go_dark()"
-            class="fas fa-lightbulb darkmode-full"
-          >
-          </i>
-          <i
-            id="light-bulb"
-            onclick="go_light()"
-            class="far fa-lightbulb darkmode"
-          >
-          </i>
-        </span>
+        </div>
       </nav>
     </div>
     <div id="body-header-mobile">
@@ -448,7 +452,7 @@
             mask="url(#path-1-outside-1)"
           />
         </svg>
-
+        <br />
         <svg
           style="margin-top: 10px"
           width="100"
@@ -2643,7 +2647,7 @@
       </div>
       <div id="contact-container-mobile">
         <div class="contact-box">
-          <div style="padding: 10px">
+          <div style="padding: 10px; margin: 15px 0">
             <svg
               width="377"
               height="121"
@@ -2678,19 +2682,9 @@
               display: flex;
               flex-direction: column;
               justify-content: space-evenly;
+              margin-top: 15px;
             "
           >
-            <div style="padding: 20px; margin-bottom: 20px">
-              <a class="contact-button" href="documents/res.pdf" target="_blank"
-                ><span> <i class="fas fa-file-download"> </i> </span>Resume</a
-              >
-              <a
-                class="contact-button"
-                target="_blank"
-                href="https://tamaghanm.wixsite.com/tgclicks"
-                ><span> <i class="fas fa-camera-retro"> </i> </span>Photography
-              </a>
-            </div>
             <div class="contact-info-container">
               <p>
                 <i class="fas fa-map-marker-alt"></i>
@@ -2715,6 +2709,17 @@
                 </p>
               </a>
             </div>
+            <div style="padding: 20px">
+              <a class="contact-button" href="documents/res.pdf" target="_blank"
+                ><span> <i class="fas fa-file-download"> </i> </span>Resume</a
+              >
+              <a
+                class="contact-button"
+                target="_blank"
+                href="https://tamaghanm.wixsite.com/tgclicks"
+                ><span> <i class="fas fa-camera-retro"> </i> </span>Photography
+              </a>
+            </div>
           </div>
           <div
             style="
@@ -2724,18 +2729,7 @@
               padding: 20px;
             "
           >
-            <a
-              href="index2.html"
-              style="
-                text-align: center;
-                font-size: 13px;
-                color: lightgray;
-                text-decoration: none;
-              "
-            >
-              Tamaghan Maurya © 2022
-            </a>
-            <div>
+            <div class="mb-3">
               <a
                 target="_blank"
                 href="mailto:tamaghan@buffalo.com"
@@ -2772,25 +2766,20 @@
                 class="fas fa-camera-retro social-icons"
               ></a>
             </div>
+            <hr />
+            <a
+              href="index2.html"
+              style="
+                text-align: center;
+                font-size: 13px;
+                color: lightgray;
+                text-decoration: none;
+                margin-top: 5px;
+              "
+            >
+              Tamaghan Maurya © 2022
+            </a>
           </div>
-
-          <!--                <p>Copyright Tamaghan Maurya © 2020</p>-->
-          <!--            </div>-->
-          <!--            <div>-->
-          <!--                <a target="_blank" href="mailto:tamaghan@buffalo.com" class="fas fa-envelope social-icons"></a>-->
-          <!--                <a target="_blank" href="https://www.linkedin.com/in/tamaghan/"-->
-          <!--                   class="fab fa-linkedin-in social-icons"></a>-->
-          <!--                <a target="_blank" href="https://www.facebook.com/tamaghanmaurya"-->
-          <!--                   class="fab fa-facebook social-icons"></a>-->
-          <!--                <a target="_blank" href="https://www.instagram.com/tamaghan/"-->
-          <!--                   class="fab fa-instagram social-icons"></a>-->
-          <!--                <a target="_blank" href="https://github.com/tamaghan" class="fab fa-github social-icons"></a>-->
-          <!--                <a target="_blank" href="https://tamaghanm.wixsite.com/tgclicks"-->
-          <!--                   class="fas fa-camera-retro social-icons"></a>-->
-          <!--            </div>-->
-          <!--            <div>-->
-          <!--                <p> Made with Fontawesome, Animate, and AOS </p>-->
-          <!--            </div>-->
         </div>
       </div>
     </section>
